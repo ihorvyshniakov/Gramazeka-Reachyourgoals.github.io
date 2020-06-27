@@ -16,6 +16,8 @@
 	
 #header{
 	height: 80px;
+	width: 100%;
+	position: fixed;
 	position: sticky;
 	top: 0;
 	display: flex;
@@ -23,6 +25,11 @@
 	align-items: center;
 	background: #fff;
 	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+/* Internet Explorer 11+ */
+_:-ms-fullscreen,
+:root #header {
+	justify-content: space-around;
 }
 #header-img, img{
 	height: 100%;
@@ -56,6 +63,9 @@
 	background: #fa8d21;
 	transition: background 0.5s;
 }
+.btn1{
+	width: 120px;
+}
 
 /* hero */
 
@@ -65,8 +75,15 @@
 	text-align: center;
 	margin: 30px auto;
 }
+/* Internet Explorer 11+ */
+_:-ms-fullscreen,
+:root #hero {
+	margin: 80px auto;
+	padding-top: 30px;
+}
 #hero h2{
-	margin: 0 30px;
+	margin: 0 auto;
+	width: 80%;
 }
 #form{
 	margin-top: 15px;
@@ -93,6 +110,9 @@
 	margin-top: -90px;
 	-webkit-background-clip: content-box;
 	background-clip: content-box;
+}
+#features p, h2{
+	width: 100%;
 }
 .block{
 	display: flex;
@@ -138,10 +158,17 @@
 /* pricing */
 
 #pricing{
+	padding-top: 90px;
+	margin-top: -90px;
 	display: flex;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	margin: 10px 20px;
+}
+/* Internet Explorer 11+ */
+_:-ms-fullscreen,
+:root #pricing {
+	justify-content: space-around;
 }
 .product{
 	display: flex;
@@ -224,6 +251,11 @@ button{
 		justify-content: space-evenly;
 		width: 100%;
 	}
+	/* Internet Explorer 11+ */
+	_:-ms-fullscreen,
+	:root #nav-bar{
+		justify-content: space-around;
+	}
 	.nav-link{
 		margin: 0;
 		font-size: 30px;
@@ -231,6 +263,11 @@ button{
 	}
 	.block{
 		margin-bottom: 20px;
+	}
+	/* Internet Explorer 11+ */
+	_:-ms-fullscreen,
+	:root #hero{
+		padding-top: 60px;
 	}
 	#features{
 		padding-top: 110px;
@@ -273,6 +310,11 @@ button{
 	.desc{
 		margin: 0 20px 0 0;
 	}
+	/* Internet Explorer 11+ */
+	_:-ms-fullscreen,
+	:root #hero{
+		padding-top: 145px;
+	}
 	#features{
 		padding-top: 195px;
 		margin-top: -195px;
@@ -280,6 +322,9 @@ button{
 	#how-it-works{
 		padding-top: 200px;
 		margin-top: -195px;
+	}
+	#nav-bar .href:nth-child(2n){
+		width: 195px;
 	}
 	#pricing{
 		padding-top: 200px;
