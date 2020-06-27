@@ -1,0 +1,175 @@
+@media (min-width: 1240px){
+.body{
+	background: #d7d7d7;
+	height: 100%;
+	width: 100%;
+}
+
+/* header */
+
+#header{
+	display: block;
+	position: sticky;
+	top: 0;
+	height: 80px;
+	width: 100%;
+	background: #fff;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+header img{
+	height: 100%;
+	margin-left: 150px;
+}
+#nav-bar {
+	float: right;
+	font-size: 0px;
+	margin: 20px 13% 0 0;
+}
+#nav-bar a{
+	font-size: 30px;
+	margin-right: 70px;
+	font-weight: 200;
+}
+
+/* Button */
+.btn{
+	background: #f1c40f;
+	border: 0;
+	padding: 8px 20px;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 5px;
+	margin: 15px auto;
+	font-weight: bold;
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+.btn:hover{
+	background: #fa8d21;
+	transition: background 0.5s;
+}
+
+/* hero */
+
+section{
+	height: 100%;
+	max-width: 900px;
+	text-align: center;
+	margin: 30px auto;
+}
+#form{
+	margin-top: 15px;
+}
+#form input{
+	display: block;
+}
+[type="email"]{
+	margin: 0 auto;
+	padding: 10px;
+	width: 300px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+/* features */
+
+#features{
+	display: flex;
+	flex-direction: column;
+	/* Fix overapped of block */
+	padding-top: 90px;
+	margin-top: -90px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
+.block{
+	display: flex;
+	height: 125px;
+}
+.icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 20vw;
+}
+.fa{
+	color: #ff8c00;
+	width: 62px;
+}
+.desc{
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	width: 80vw;
+}
+
+/* how-it-works */
+
+#how-it-works{
+	/* Fix overapped of block */
+	padding-top: 90px;
+	margin-top: -90px;
+	-webkit-background-clip: content-box;
+	background-clip: content-box;
+}
+
+/* pricing */
+
+#pricing{
+	display: flex;
+	justify-content: space-evenly;
+}
+.product{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	width: 275px;
+	border: 1px solid #000;
+	border-radius: 3px;
+}
+.product h2{
+	margin-top: 15px;
+}
+.level{
+	background: #b5b5b5;
+	padding: 15px 0;
+	
+}
+.level p{
+	width: 60%;
+	margin: 0 auto;
+	font-weight: bold;
+}
+ol{
+	margin: 15px 0;
+}
+li{
+	list-style: none;
+	padding: 5px 0;
+}
+button{
+	font-size: 19px;
+}
+
+/* footer */
+
+#footer{
+	width: 900px;
+	background: #b5b5b5;
+	margin: 0 auto;
+	text-align: right;
+	padding: 20px;
+}
+#footer li{
+	display: inline-block;
+	padding: 0 10px;
+}
+#footer span{
+	font-size: 0.9em;
+	margin: 5px 0 0;
+	color: #fff;
+}
+}
