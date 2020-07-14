@@ -204,6 +204,10 @@ span {
 	bottom: 5%;
 }
 
+.btn, #profile-link{
+	font-weight: bold;
+	letter-spacing: 0.5px;
+}
 .btn{
 	color: #fff;
 	padding: 10px 20px;
@@ -228,9 +232,6 @@ span {
 }
 
 @media (max-width: 800px) {
-	#navbar50{
-		padding-bottom: 1%;
-	}
 	#h2{
 		width: 70%;
 	}
@@ -241,7 +242,7 @@ span {
 		font-size: 0.9rem;
 	}
 	svg {
-		height: 40px;
+		height: 43px;
 	}
 }
 
@@ -307,10 +308,6 @@ span {
 	}
 	.href a {
 		font-size: 20px;
-	}
-	.btn, #profile-link{
-		font-weight: bold;
-		letter-spacing: 0.5px;
 	}
 }
 
