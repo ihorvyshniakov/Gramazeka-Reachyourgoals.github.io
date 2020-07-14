@@ -1,84 +1,96 @@
-<style>
-  .back {
-    position: fixed;
-    padding: 0;
-    margin: 0;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: white;
-    animation-name: backdiv;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
+<!DOCTYPE html>
+<html lang="en">
 
-  .heart {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: pink;
-    height: 50px;
-    width: 50px;
-    transform: rotate(-45deg);
-    animation-name: beat;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart:after {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 0px;
-    left: 25px;
-    animation-name: beat-pseudo;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
-  .heart:before {
-    background-color: pink;
-    content: "";
-    border-radius: 50%;
-    position: absolute;
-    width: 50px;
-    height: 50px;
-    top: -25px;
-    left: 0px;
-    animation-name: beat-pseudo;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-  }
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Federant&family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<title>My Work #5</title>
+</head>
 
-  @keyframes backdiv {
-    50% {
-      background: #ffe6f2;
-    }
-  }
+<body>
+	<nav id="navbar">
+		<header>
+			<div id="navbar50">
+				<div class="href"><a href="#welcome-section">About</a></div>
+				<div class="href"><a href="#projects">Work</a></div>
+				<div class="href"><a href="#contact">Contact</a></div>
+			</div>
+		</header>
+		<svg viewBox="0 0 500 150" preserveAspectRatio="none">
+			<path d="M-11.58,75.88 C194.98,-107.35 354.68,210.08 553.33,8.13 L500.00,00.00 L0.00,0.00 Z"
+				style="stroke: none; fill: #fff;"></path> <!--  stroke-width: 5; stroke: #b0b0b0; filter: blur(2px);-->
+		</svg>
+	</nav>
+	<section id="welcome-section">
+		<h1>Hey I am Ihor</h1>
+		<p>a web developer</p>
+	</section>
+	<section id="projects">
+		<div id="h2">
+			<h2 class="projects-section-header"> These are some of my projects </h2>
+		</div>
+		<div id="projects-grid">
+			<a class="project-tile" href="my-portfolio.gq/mywork4/index.html"
+				target="_blank">
+				<img src="img/mywork4.png" alt="">
+				<div id="p">
+					<p class="project-title">
+						<span class="code">&lt;</span> JavaScript documentation <span class="code">/&gt;</span>
+					</p>
+				</div>
+			</a>
+			<a class="project-tile" href="my-portfolio.gq/mywork3/index.html"
+				target="_blank">
+				<img src="img/mywork3.png" alt="">
+				<div id="p">
+					<p class="project-title">
+						<span class="code">&lt;</span> Landing page <span class="code">/&gt;</span>
+					</p>
+				</div>
+			</a>
+			<a class="project-tile" href="my-portfolio.gq/mywork2/index.html"
+				target="_blank">
+				<img src="img/mywork2.png" alt="">
+				<div id="p">
+					<p class="project-title">
+						<span class="code">&lt;</span> Customer Review Survey Form <span class="code">/&gt;</span>
+					</p>
+				</div>
+			</a>
+			<a class="project-tile" href="my-portfolio.gq/mywork1/index.html"
+				target="_blank">
+				<img src="img/mywork1.png" alt="">
+				<div id="p">
+					<p class="project-title">
+						<span class="code">&lt;</span> Info - landing <span class="code">/&gt;</span>
+					</p>
+				</div>
+			</a>
+		</div>
+	</section>
+	<footer>
+		<section id="contact">
+			<h2>Let's work together...</h2>
+			<div id="contact-links">
+				<a class="btn" href="https://www.instagram.com/ihorvishnyakov/" target="_blank"><i
+						class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
+				<a class="btn" href="https://www.linkedin.com/in/ihor-vyshniakov-8b43a0161/" target="_blank"><i
+						class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a>
+				<a class="btn" href="tel:095-035-28-60" target="_blank"><i class="fa fa-mobile" aria-hidden="true"></i>
+					Call me</a>
+				<a class="btn" href="mailto:gramazekavip@gmail.com" target="_blank"><i class="fa fa-at"
+						aria-hidden="true"></i> Send email</a>
+				<a class="btn" href="https://t.me/GRAMAZEK" target="_blank"><i class="fa fa-telegram"
+						aria-hidden="true"></i> Telegram</a>
+			</div>
+			<a id="profile-link" href="https://www.freecodecamp.org/gramazeka" target="_blank"><i
+					class="fa fa-free-code-camp" aria-hidden="true"></i> FreeCodeCamp profile</a>
+			<p>© All rights reserved</p>
+		</section>
+	</footer>
+</body>
 
-  @keyframes beat {
-    0% {
-      transform: scale(1) rotate(-45deg);
-      background-color: red;
-    }
-    70% {
-      transform: scale(0.6) rotate(-45deg);
-      background-color: pink;
-    }
-  }
-  @keyframes beat-pseudo {
-    0% {
-      background-color: red;
-    }
-    70% {;
-      background-color: pink;
-    }
-  }
-</style>
-<div class="back"></div>
-<div class="heart"></div>
+</html>
