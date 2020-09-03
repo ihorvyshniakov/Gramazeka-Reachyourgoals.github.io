@@ -1,0 +1,212 @@
+nav {
+	#img {
+		width: 20%;
+	}
+
+	header {
+		justify-content: center;
+		width: 80%;
+
+		.href {
+			margin-right: 7%;
+		}
+	}
+
+	.btn {
+		line-height: 40px;
+	}
+}
+
+.btn {
+	width: 125px;
+}
+
+#section1 {
+	form {
+		h1 {
+			font-size: 52px;
+			color: $color_2;
+			max-width: 310px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		#form-group {
+			margin-top: 74px;
+			max-width: 510px;
+
+			#select {
+				.select-wrap {
+					width: 170px;
+					height: 46px;
+				}
+
+				.dropdown {
+					width: 170px;
+					height: 46px;
+					padding-left: 26px;
+				}
+			}
+		}
+
+		input {
+			width: 175px;
+			margin-top: 51px-40px;
+			font-size: 1.2em;
+		}
+	}
+}
+
+#section2 {
+	.article {
+		padding: 0 10% 0 20%;
+
+		br {
+			display: none;
+		}
+	}
+
+	.scr2 {
+		margin-left: 0;
+	}
+}
+
+#text {
+	width: 85%;
+}
+
+.article {
+	a {
+		.btn {
+			width: 155px;
+		}
+	}
+}
+
+#section3 {
+	padding-top: 120px;
+	border-top: 90px solid transparent;
+	margin-top: -90px;
+}
+
+#section4 {
+	padding: 120px 5% 10vh;
+}
+
+#section5 {
+	padding-top: 120px;
+	border-top: 20px solid transparent;
+	margin-top: -20px;
+
+	#h2 {
+		margin-bottom: 20px;
+		width: 85%;
+
+		h2 {
+			padding: 0;
+		}
+	}
+
+	.wrapper {
+
+		article {
+			.article {
+				blockquote {
+					font-size: 22px;
+				}
+
+				p:nth-last-of-type(2) {
+					font-size: 20px;
+				}
+
+				p:nth-last-of-type(1) {
+					font-size: 17px;
+				}
+
+			}
+		}
+
+		.photo {
+			margin-left: 6%;
+		}
+	}
+}
+
+#section6 {
+	padding: 120px 5% 10vh;
+	border-top: 30px solid transparent;
+	margin-top: -30px;
+
+	#posts {
+		width: 90%;
+		justify-content: center;
+
+		.post {
+			width: 200px;
+			margin-right: 3%;
+
+			h3 {
+				font-size: 17px;
+				line-height: 25px;
+			}
+
+			p {
+				font-size: 14px;
+				line-height: 23px;
+			}
+
+			img {
+				max-width: 100%;
+				height: 177px;
+			}
+		}
+	}
+}
+
+footer {
+	height: auto;
+	max-width: 100%;
+	margin-top: 100px;
+	background: #f9f9fb;
+
+	.wrapper {
+		padding-top: 28px;
+
+		p {
+			font-size: 17px;
+		}
+
+		#block1 {
+			margin-bottom: 0;
+			padding-left: 3%;
+
+			p {
+				margin: 0 0 40px 0;
+			}
+		}
+
+		#block2 {
+			margin: 0 10% 0 3%;
+			width: 60%;
+
+			.item {
+				width: 32%;
+
+				a {
+					font-size: 17px;
+				}
+			}
+
+			p {
+				font-size: 17px;
+			}
+		}
+	}
+
+	span {
+		margin-top: 50px;
+
+	}
+}
