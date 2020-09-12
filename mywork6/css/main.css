@@ -1243,7 +1243,6 @@ footer {
         #section5 .wrapper .photo #scr3 {
           width: 100%; }
           #section5 .wrapper .photo #scr3::before {
-            content: '';
             right: -17.5%;
             top: -6%; }
           #section5 .wrapper .photo #scr3::after {
@@ -1926,49 +1925,36 @@ footer {
     font-size: 28px;
     line-height: 35px; }
   #section3 {
-    padding: 0 5% 10vh; }
+    padding: 0 5% 10vh;
+    border-top: 100px solid transparent;
+    margin-top: -100px; }
     #section3 .text {
       width: auto;
       height: auto;
       text-align: center; }
-    #section3 #cards {
-      width: 90%;
-      margin-top: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -ms-flex-pack: distribute;
-      justify-content: space-around;
-      -webkit-box-align: space-around;
-      -ms-flex-align: space-around;
-      align-items: space-around; }
-      #section3 #cards > img:nth-child(1) {
-        bottom: 15%;
-        left: -12%;
+    #section3 #cards > img:nth-child(1) {
+      bottom: 15%;
+      left: -12%; }
+    #section3 #cards > img:nth-child(2) {
+      top: 20%;
+      right: -8%; }
+    #section3 #cards > img:nth-child(3) {
+      top: -22%;
+      left: 10%;
+      display: none; }
+    #section3 #cards .card {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 10px 20px;
+      width: 100%;
+      height: 100%; }
+      #section3 #cards .card:nth-child(n+5):nth-child(-n+7) {
         display: none; }
-      #section3 #cards > img:nth-child(2) {
-        top: 40%;
-        right: -8%;
-        display: none; }
-      #section3 #cards > img:nth-child(3) {
-        top: -22%;
-        left: 10%;
-        display: none; }
-      #section3 #cards .card {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        margin: 0;
-        padding: 10px 20px;
-        width: 100%;
-        height: 100%; }
-        #section3 #cards .card:nth-child(n+5):nth-child(-n+7) {
-          display: none; }
     #section3 > a:nth-last-of-type(1) {
       display: block;
       width: 83px;
-      margin: 20px 0 33px; }
+      margin: 20px 0 0; }
       #section3 > a:nth-last-of-type(1) p {
         display: block;
         position: relative;
@@ -1985,5 +1971,83 @@ footer {
         height: 11px;
         background: url(../img/arrow2.png) center no-repeat;
         position: absolute;
-        top: 9px;
-        right: 4px; } }
+        top: 5px;
+        right: 4px; }
+  #section4 {
+    padding: 0 0 10vh; }
+    #section4 h2:first-child {
+      margin-bottom: 15px; }
+    #section4 article .article {
+      padding: 0; }
+      #section4 article .article a {
+        width: 130px;
+        height: 37px; }
+        #section4 article .article a .btn {
+          width: 100%;
+          height: 37px; }
+      #section4 article .article img:nth-last-of-type(2) {
+        top: -35%;
+        left: 1%; }
+      #section4 article .article img:nth-last-of-type(1) {
+        bottom: 1%;
+        right: 10%; }
+      #section4 article .article p {
+        margin: 13px 0 15px; }
+    #section4 .scr2 {
+      width: 70%; }
+      #section4 .scr2 img:nth-child(2) {
+        top: 7%;
+        right: -8%; }
+  #section5 {
+    padding: 0 0 10vh;
+    border-top: 80px solid transparent;
+    margin-top: -80px; }
+    #section5 #wrapper1 #h2 {
+      margin-bottom: 15px; }
+    #section5 .wrapper article {
+      margin-top: 15px; }
+      #section5 .wrapper article .article {
+        padding: 0; }
+        #section5 .wrapper article .article #star {
+          margin-bottom: 15px; }
+          #section5 .wrapper article .article #star img:nth-last-of-type(1) {
+            margin-right: 0; }
+        #section5 .wrapper article .article blockquote {
+          display: none; }
+        #section5 .wrapper article .article p:nth-last-of-type(2) {
+          margin-top: 0; }
+    #section5 .wrapper .photo {
+      width: 180px;
+      margin-left: 0; }
+      #section5 .wrapper .photo #scr3 {
+        width: 100%; }
+        #section5 .wrapper .photo #scr3::before {
+          width: 27.97px;
+          height: 27px;
+          right: -35px;
+          top: -15px; }
+        #section5 .wrapper .photo #scr3::after {
+          width: 22.43px;
+          height: 21.66px;
+          left: 5px;
+          bottom: -10px;
+          -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
+          -ms-transform: matrix(1, 0, 0, 1, 0, 0);
+          transform: matrix(1, 0, 0, 1, 0, 0); }
+        #section5 .wrapper .photo #scr3 img:first-child {
+          display: block;
+          max-width: 100%;
+          height: auto; }
+        #section5 .wrapper .photo #scr3 span {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: transparent; }
+          #section5 .wrapper .photo #scr3 span #img img:nth-child(1) {
+            height: 30px;
+            left: -50px;
+            bottom: 40%; }
+          #section5 .wrapper .photo #scr3 span #img img:nth-child(2) {
+            height: 30px;
+            right: -50px;
+            bottom: 40%; } }
