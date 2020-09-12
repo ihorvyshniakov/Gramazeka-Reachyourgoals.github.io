@@ -1,4 +1,8 @@
+// add 1366x768 resolution(maybe for height)
+
 nav {
+	height: 60px;
+
 	#img {
 		width: 20%;
 	}
@@ -25,7 +29,6 @@ nav {
 	form {
 		h1 {
 			font-size: 52px;
-			color: $color_2;
 			max-width: 310px;
 		}
 
@@ -33,9 +36,23 @@ nav {
 			font-size: 20px;
 		}
 
+		img:nth-child(2) {
+			top: 52%;
+			left: -1%;
+		}
+
+		img:nth-child(3) {
+			bottom: -5%;
+			right: 1%;
+		}
+
+		img:nth-child(4) {
+			right: 12%;
+			top: 6%;
+		}
+
 		#form-group {
-			margin-top: 74px;
-			max-width: 510px;
+			margin-top: 54px;
 
 			#select {
 				.select-wrap {
@@ -45,7 +62,6 @@ nav {
 
 				.dropdown {
 					width: 170px;
-					height: 46px;
 					padding-left: 26px;
 				}
 			}
@@ -53,28 +69,30 @@ nav {
 
 		input {
 			width: 175px;
-			margin-top: 51px-40px;
 			font-size: 1.2em;
 		}
 	}
 }
 
 #section2 {
+	padding: 40px 5% 10vh;
+
 	.article {
 		padding: 0 10% 0 20%;
 
 		br {
 			display: none;
 		}
+
+		img {
+			bottom: 12%;
+			right: 25%;
+		}
 	}
 
 	.scr2 {
 		margin-left: 0;
 	}
-}
-
-#text {
-	width: 85%;
 }
 
 .article {
@@ -85,32 +103,67 @@ nav {
 	}
 }
 
+#text {
+	width: 85%;
+}
+
 #section3 {
-	padding-top: 120px;
-	border-top: 90px solid transparent;
-	margin-top: -90px;
+	#cards {
+		&>img:nth-child(1) {
+			bottom: 33%;
+			left: -5.5%;
+		}
+
+		&>img:nth-child(2) {
+			bottom: -20%;
+			right: 51%;
+		}
+
+		&>img:nth-child(3) {
+			top: -20%;
+			right: 35%;
+		}
+	}
 }
 
 #section4 {
 	padding: 120px 5% 10vh;
+
+	.article {
+		img:nth-last-of-type(2) {
+			top: -16%;
+			left: 18.5%;
+		}
+
+		img:nth-last-of-type(1) {
+			bottom: 0%;
+			right: 13%;
+		}
+	}
+
+	.scr2 {
+		img:nth-child(2) {
+			top: 7%;
+			right: -4%;
+		}
+	}
+
 }
 
 #section5 {
-	padding-top: 120px;
-	border-top: 20px solid transparent;
-	margin-top: -20px;
+	#wrapper1 {
+		#h2 {
+			h2 {
+				padding: 0 10%;
+			}
+		}
 
-	#h2 {
-		margin-bottom: 20px;
-		width: 85%;
-
-		h2 {
-			padding: 0;
+		div:last-child {
+			margin-left: 6%;
 		}
 	}
 
 	.wrapper {
-
 		article {
 			.article {
 				blockquote {
@@ -143,17 +196,27 @@ nav {
 		width: 90%;
 		justify-content: center;
 
+		&>img:nth-child(1) {
+			bottom: 44%;
+			left: -8%;
+		}
+
+		&>img:nth-child(3) {
+			top: -33%;
+			left: 42%;
+		}
+
 		.post {
 			width: 200px;
 			margin-right: 3%;
 
 			h3 {
-				font-size: 17px;
+				font-size: 18px;
 				line-height: 25px;
 			}
 
 			p {
-				font-size: 14px;
+				font-size: 15px;
 				line-height: 23px;
 			}
 
@@ -166,11 +229,6 @@ nav {
 }
 
 footer {
-	height: auto;
-	max-width: 100%;
-	margin-top: 100px;
-	background: #f9f9fb;
-
 	.wrapper {
 		padding-top: 28px;
 
@@ -179,7 +237,7 @@ footer {
 		}
 
 		#block1 {
-			margin-bottom: 0;
+			margin: 0 0 0 10%;
 			padding-left: 3%;
 
 			p {
@@ -207,6 +265,5 @@ footer {
 
 	span {
 		margin-top: 50px;
-
 	}
 }

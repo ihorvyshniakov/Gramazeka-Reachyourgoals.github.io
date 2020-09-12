@@ -1,0 +1,113 @@
+nav {
+
+	#img {
+		padding-left: 40px;
+
+		img {
+			display: block;
+		}
+	}
+
+	#burger {
+		top: 19px;
+		right: 40px;
+	}
+
+	header {
+		padding-top: 50px;
+	}
+}
+
+.btn {
+	line-height: 35px;
+}
+
+#section1 {
+	padding: 85px 0 10vh;
+
+	&>h1:first-child {
+		font-size: 30px;
+		line-height: 45px;
+		margin-bottom: 15px;
+	}
+
+	&>img:nth-child(2) {
+		width: 18.51px;
+		height: 18px;
+
+		left: 8%;
+		top: 145px;
+		display: none;
+	}
+
+	form {
+		width: 90%;
+
+		p {
+			font-size: 16px;
+			line-height: 16px;
+			letter-spacing: 0.05rem;
+
+			&:after {
+				top: 30px;
+			}
+		}
+
+		#form-group {
+			&>img:nth-child(1) {
+				width: 24.55px;
+				height: 24px;
+
+				bottom: -30px;
+				left: -10px;
+				display: none;
+			}
+
+			#select {
+				flex-wrap: wrap;
+
+				.select-wrap {
+					box-sizing: border-box;
+					width: 48%;
+					margin: 0 10px 10px 0;
+					height: 35px;
+
+					&:nth-child(even) {
+						margin-right: 0;
+					}
+				}
+
+				.dropdown {
+					padding-left: 10px;
+				}
+			}
+		}
+
+		input {
+			width: 130px;
+			margin-top: 5px;
+		}
+	}
+
+	#scr1 {
+		width: 70%;
+
+		&>img:nth-child(1) {
+			width: 18.51px;
+			height: 18px;
+
+			bottom: 0px;
+			right: -30px;
+			display: none;
+		}
+	}
+}
+
+
+
+p {
+	margin: 13px 0 15px;
+
+	font-size: 16px;
+	line-height: 20px;
+}

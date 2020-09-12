@@ -8,6 +8,10 @@ $color_2: #202336;
 
 //-------
 
+// TODO Optimisation of code
+// TODO Correct img positioning
+// TODO Focus on form elements 
+
 // 1800px+
 html {
 	height: inherit;
@@ -19,13 +23,18 @@ body {
 
 nav {
 	display: flex;
+	align-items: center;
 	width: 100%;
 	height: 80px;
+
+	font-family: 'Inter', sans-serif;
+	font-size: 1.2em;
+	line-height: 19px;
 
 	position: sticky;
 	top: 0;
 	background: #fff;
-	z-index: 1;
+	z-index: 5;
 
 	#img {
 		display: flex;
@@ -55,10 +64,6 @@ nav {
 		width: 50%;
 		margin: 0 5% 0 0;
 
-		font-family: 'Inter', sans-serif;
-		font-size: 1.2em;
-		line-height: 19px;
-
 		div:last-child {
 			display: flex;
 			justify-content: space-between;
@@ -71,7 +76,6 @@ nav {
 			&:hover {
 				color: #B8BECD;
 			}
-
 		}
 
 		a {
@@ -118,7 +122,7 @@ main {
 	&:hover {
 		background: $color_1;
 		color: #fff;
-		transition: all .3s linear;
+		transition: $anim;
 	}
 }
 
@@ -131,6 +135,14 @@ main {
 	margin-top: -80px;
 	padding-top: 140px;
 	padding-bottom: 20vh;
+
+	&>h1:first-child {
+		display: none;
+	}
+
+	&>img:nth-child(2) {
+		display: none;
+	}
 
 	form {
 		height: 100%;
@@ -210,6 +222,10 @@ main {
 			margin-top: 74px;
 			max-width: 510px;
 
+			&>img:nth-child(1) {
+				display: none;
+			}
+
 			#select {
 				margin-top: 71px;
 
@@ -221,6 +237,7 @@ main {
 					position: relative;
 					border-radius: 6px;
 					border: 0.8px solid #AFB0B9;
+					box-sizing: border-box;
 
 					overflow: hidden;
 				}
@@ -244,8 +261,8 @@ main {
 				}
 
 				.dropdown {
-					width: 220px;
-					height: 52px;
+					width: 100%;
+					height: 100%;
 					line-height: 32px;
 					font-size: 1.1em;
 					font-family: 'Inter', sans-serif;
@@ -279,7 +296,11 @@ main {
 		width: 50%;
 		padding-right: 6%;
 
-		img {
+		&>img:nth-child(1) {
+			display: none;
+		}
+
+		img:last-child {
 			max-width: 100%;
 		}
 	}
@@ -288,13 +309,14 @@ main {
 #section2 {
 	height: auto;
 	max-width: 100%;
-	padding: 0 5% 0;
-	margin-top: -140px;
-	padding-top: 140px;
-	padding-bottom: 10vh;
+	padding: 100px 5% 10vh;
 
 	display: flex;
 	align-items: center;
+
+	&>h2:first-child {
+		display: none;
+	}
 
 	.article {
 		max-width: 492px;
@@ -396,7 +418,7 @@ article {
 	}
 }
 
-#text {
+.text {
 	width: 74%;
 	height: 60px;
 
@@ -440,7 +462,9 @@ article {
 #section3 {
 	height: auto;
 	max-width: 100%;
-	padding: 180px 5% 10vh;
+	padding: 120px 5% 10vh;
+	border-top: 90px solid transparent;
+	margin-top: -90px;
 
 	display: flex;
 	flex-direction: column;
@@ -510,7 +534,21 @@ article {
 	display: flex;
 	align-items: center;
 
+	&>h2:first-child {
+		display: none;
+	}
+
 	.article {
+		img:nth-last-of-type(2) {
+			display: block;
+			width: 20.42px;
+			height: 20px;
+
+			position: absolute;
+			top: -16%;
+			left: 18.5%;
+		}
+
 		img:nth-last-of-type(1) {
 			display: block;
 			width: 20.46px;
@@ -521,23 +559,14 @@ article {
 			bottom: 3%;
 			right: 6%;
 		}
-
-		img:nth-last-of-type(2) {
-			display: block;
-			width: 20.42px;
-			height: 20px;
-
-			position: absolute;
-			top: -16%;
-			left: 18.5%;
-		}
 	}
 
-	#scr2 {
+	.scr2 {
 		img:nth-child(2) {
 			display: block;
-			width: 20.42px;
-			height: 20px;
+			width: 16.4px;
+			height: 16.01px;
+			transform: matrix(0.98, 0.17, -0.18, 0.99, 0, 0);
 
 			position: absolute;
 			top: 7%;
@@ -549,22 +578,31 @@ article {
 #section5 {
 	height: auto;
 	max-width: 100%;
-	padding: 140px 5% 10vh;
+	padding: 120px 5% 10vh;
+	border-top: 20px solid transparent;
+	margin-top: -20px;
 
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 
-	#h2 {
+	#wrapper1 {
 		display: flex;
-		flex-direction: column;
-		width: 50%;
-		margin-bottom: 43px;
+		align-items: center;
+		justify-content: center;
+		width: 90%;
 
-		h2 {
-			padding-bottom: 43px;
+		#h2 {
+			display: flex;
+			flex-direction: column;
+			width: 50%;
+			margin-bottom: 43px;
 			max-width: 492px;
-			padding: 0 10%;
+		}
+
+		div:last-child {
+			width: 50%;
+			height: 0;
 		}
 	}
 
@@ -579,7 +617,6 @@ article {
 			flex-direction: column;
 
 			.article {
-
 				#star {
 					display: block;
 					margin-bottom: 30px;
@@ -685,7 +722,7 @@ article {
 
 						img:nth-child(1) {
 							position: absolute;
-							left: 30px;
+							left: 25px;
 						}
 
 						img:nth-child(2) {
@@ -708,7 +745,7 @@ article {
 	flex-direction: column;
 	align-items: center;
 
-	#text {
+	.text {
 		margin-bottom: 56px;
 	}
 
@@ -841,7 +878,6 @@ footer {
 			display: flex;
 			flex-direction: column;
 			margin: 0 0 5px 10%;
-			padding: 0 auto;
 			width: 40%;
 			min-width: 237px;
 			box-sizing: border-box;
@@ -911,7 +947,7 @@ footer {
 		display: flex;
 		justify-content: center;
 		align-items: start;
-		height: 55px;
+		height: 45px;
 
 		a {
 			margin-right: 35px;
@@ -943,12 +979,12 @@ footer {
 	@import "desktop-up.scss";
 }
 
-// 900-1199px
+// 900-1199px -done
 @media (max-width: 1199px) {
 	@import "tablet-landscape-up.scss";
 }
 
-// 600-899px
+// 600-899px - done
 @media (max-width: 899px) {
 	@import "tablet-portrait-up.scss";
 }
