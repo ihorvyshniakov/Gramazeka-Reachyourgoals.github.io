@@ -2034,10 +2034,6 @@ footer {
           -webkit-transform: matrix(1, 0, 0, 1, 0, 0);
           -ms-transform: matrix(1, 0, 0, 1, 0, 0);
           transform: matrix(1, 0, 0, 1, 0, 0); }
-        #section5 .wrapper .photo #scr3 img:first-child {
-          display: block;
-          max-width: 100%;
-          height: auto; }
         #section5 .wrapper .photo #scr3 span {
           display: block;
           width: 100%;
