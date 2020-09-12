@@ -1792,6 +1792,59 @@ footer {
     right: 20px; }
   nav header {
     padding-top: 50px; }
+    nav header.active {
+      top: 0;
+      height: auto; }
+    nav header .href {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin: 0;
+      width: 70%;
+      height: 20%;
+      border-bottom: 1px solid #ccc; }
+    nav header .href:first-child > a {
+      color: #B8BECD; }
+      nav header .href:first-child > a:hover {
+        color: #202336; }
+    nav header a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%;
+      width: 100%; }
+    nav header div:last-child {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+      width: 100%;
+      margin: 2% 0 10%;
+      font-size: 0.9em; }
+      nav header div:last-child .btn {
+        width: 130px;
+        height: 45px; }
+        nav header div:last-child .btn:first-child {
+          margin-right: 5%; }
   .btn {
     line-height: 35px; }
   #section1 {

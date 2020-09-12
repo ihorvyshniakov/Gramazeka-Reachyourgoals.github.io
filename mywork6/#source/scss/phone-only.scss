@@ -15,6 +15,56 @@ nav {
 
 	header {
 		padding-top: 50px;
+
+		&.active {
+			top: 0;
+			height: auto;
+		}
+
+		.href {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 0;
+			width: 70%;
+			height: 20%;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.href:first-child>a {
+			color: #B8BECD;
+
+			&:hover {
+				color: $color_2;
+			}
+		}
+
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
+			width: 100%;
+		}
+
+		div:last-child {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-basis: 20%;
+			width: 100%;
+			margin: 2% 0 10%;
+			font-size: 0.9em;
+
+			.btn {
+				width: 130px;
+				height: 45px;
+
+				&:first-child {
+					margin-right: 5%;
+				}
+			}
+		}
 	}
 }
 
