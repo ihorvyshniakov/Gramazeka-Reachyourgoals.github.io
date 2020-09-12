@@ -9,8 +9,8 @@ $color_2: #202336;
 //-------
 
 // TODO Optimisation of code
-// TODO Correct img positioning
 // TODO Focus on form elements 
+// TODO Get clear about range of nth-child(-n+7)
 
 // 1800px+
 html {
@@ -523,6 +523,10 @@ article {
 				margin-right: 0;
 			}
 		}
+	}
+
+	a:nth-last-of-type(1) {
+		display: none;
 	}
 }
 
