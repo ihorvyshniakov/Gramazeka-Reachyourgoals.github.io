@@ -1814,10 +1814,10 @@ footer {
         #section1 form p:after {
           top: 30px; }
       #section1 form #form-group > img:nth-child(1) {
-        width: 24.55px;
-        height: 24px;
-        bottom: -30px;
-        left: -10px; }
+        width: 14.55px;
+        height: 14px;
+        bottom: -15px;
+        left: 30px; }
       #section1 form #form-group #select {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1840,8 +1840,8 @@ footer {
       #section1 #scr1 > img:nth-child(1) {
         width: 18.51px;
         height: 18px;
-        bottom: 0px;
-        right: -30px; }
+        bottom: 15px;
+        right: -35px; }
   p {
     margin: 13px 0 15px;
     font-size: 16px;
