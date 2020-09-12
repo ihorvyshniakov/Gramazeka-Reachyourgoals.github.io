@@ -151,7 +151,44 @@ nav {
 	}
 }
 
+#section2 {
+	padding: 0 0 10vh;
 
+	&>h2:first-child {
+		font-size: 28px;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+
+	article {
+		.article {
+			p {
+				margin: 13px 0 15px;
+			}
+
+			a,
+			a .btn {
+				height: 37px;
+				width: 130px;
+			}
+
+			img {
+				bottom: -15px;
+				right: 38px;
+			}
+		}
+	}
+
+	.scr2 {
+		width: 70%;
+
+		img {
+			display: block;
+			top: -10px;
+			right: -30px;
+		}
+	}
+}
 
 p {
 	margin: 13px 0 15px;

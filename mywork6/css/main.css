@@ -1895,6 +1895,44 @@ footer {
         height: 18px;
         bottom: 15px;
         right: -35px; }
+  #section2 {
+    padding: 0 0 10vh; }
+    #section2 > h2:first-child {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 15px; }
+    #section2 article .article {
+      width: 100%;
+      max-width: initial;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
+      #section2 article .article p {
+        margin: 13px 0 15px; }
+      #section2 article .article a,
+      #section2 article .article a .btn {
+        height: 37px;
+        width: 130px; }
+      #section2 article .article h2 {
+        display: none; }
+      #section2 article .article img {
+        bottom: -4%;
+        right: 23%; }
+    #section2 .scr2 {
+      width: 70%; }
+      #section2 .scr2 img {
+        display: block;
+        top: -10px;
+        right: -30px; }
   p {
     margin: 13px 0 15px;
     font-size: 16px;
