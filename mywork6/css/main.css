@@ -1804,8 +1804,7 @@ footer {
       width: 18.51px;
       height: 18px;
       left: 8%;
-      top: 145px;
-      display: none; }
+      top: 145px; }
     #section1 form {
       width: 90%; }
       #section1 form p {
@@ -1818,8 +1817,7 @@ footer {
         width: 24.55px;
         height: 24px;
         bottom: -30px;
-        left: -10px;
-        display: none; }
+        left: -10px; }
       #section1 form #form-group #select {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1843,8 +1841,7 @@ footer {
         width: 18.51px;
         height: 18px;
         bottom: 0px;
-        right: -30px;
-        display: none; }
+        right: -30px; }
   p {
     margin: 13px 0 15px;
     font-size: 16px;
