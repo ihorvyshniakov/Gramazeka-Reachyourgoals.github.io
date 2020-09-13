@@ -2017,10 +2017,7 @@ footer {
         #section5 .wrapper article .article blockquote {
           display: none; }
         #section5 .wrapper article .article p:nth-last-of-type(2) {
-          margin-top: 0;
-          -ms-flex-item-align: end;
-          -ms-grid-row-align: end;
-          align-self: end; }
+          margin-top: 0; }
     #section5 .wrapper .photo {
       width: 180px;
       margin-left: 0; }
