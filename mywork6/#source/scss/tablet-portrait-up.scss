@@ -503,9 +503,7 @@ footer {
 			width: 90%;
 			justify-content: center;
 
-			.item {
-				width: auto;
-
+			.item_global {
 				&:nth-child(1) {
 					order: 1;
 					width: auto;
@@ -522,19 +520,17 @@ footer {
 					width: 24%;
 				}
 
-				a {
-					line-height: 30px;
+				.item {
+					a {
+						line-height: 30px;
+					}
 				}
-			}
-
-			p {
-				line-height: 30px;
 			}
 		}
 
 		@media (max-width: 649px) {
 			#block2 {
-				.item {
+				.item_global {
 					&:nth-child(1) {
 						padding: 0 10% 0 8%;
 					}

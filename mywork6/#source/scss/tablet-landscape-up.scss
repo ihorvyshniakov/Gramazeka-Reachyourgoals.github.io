@@ -426,21 +426,21 @@ footer {
 		#block2 {
 			margin: 0 5% 0 0;
 
-			.item {
-				width: 35%;
+			.item_global {
+				.item {
+					&:first-child {
+						width: 30%;
+					}
 
-				&:first-child {
-					width: 30%;
+					a {
+						font-size: 16px;
+					}
 				}
 
-				a {
+				h4 {
 					font-size: 16px;
+					line-height: 40px;
 				}
-			}
-
-			p {
-				font-size: 16px;
-				line-height: 40px;
 			}
 		}
 	}
