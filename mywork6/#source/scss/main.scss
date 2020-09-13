@@ -11,7 +11,6 @@ $color_2: #202336;
 // TODO Optimisation of code
 // TODO Focus on form elements 
 // TODO Get clear about range of nth-child(-n+7)
-// TODO Infinite anomation of rotating stars
 
 // 1800px+
 html {
@@ -628,6 +627,17 @@ article {
 
 					img {
 						margin-right: 15.89px;
+						animation: rotation 2.5s infinite linear;
+					}
+
+					@keyframes rotation {
+						0% {
+							transform: rotateY(0deg)
+						}
+
+						100% {
+							transform: rotateY(360deg)
+						}
 					}
 				}
 
