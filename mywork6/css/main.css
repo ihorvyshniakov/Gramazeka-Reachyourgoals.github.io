@@ -2018,6 +2018,10 @@ footer {
           display: none; }
         #section5 .wrapper article .article p:nth-last-of-type(2) {
           margin-top: 0; }
+        #section5 .wrapper article .article p:nth-last-of-type(1),
+        #section5 .wrapper article .article p:nth-last-of-type(2) {
+          width: 100%;
+          text-align: right; }
     #section5 .wrapper .photo {
       width: 180px;
       margin-left: 0; }
