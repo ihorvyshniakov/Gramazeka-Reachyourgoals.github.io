@@ -2005,7 +2005,10 @@ footer {
     #section5 #wrapper1 #h2 {
       margin-bottom: 15px; }
     #section5 .wrapper article {
-      margin-top: 15px; }
+      margin-top: 15px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; }
       #section5 .wrapper article .article {
         padding: 0; }
         #section5 .wrapper article .article #star {
@@ -2015,7 +2018,10 @@ footer {
         #section5 .wrapper article .article blockquote {
           display: none; }
         #section5 .wrapper article .article p:nth-last-of-type(2) {
-          margin-top: 0; }
+          margin-top: 0;
+          -ms-flex-item-align: end;
+          -ms-grid-row-align: end;
+          align-self: end; }
     #section5 .wrapper .photo {
       width: 180px;
       margin-left: 0; }
