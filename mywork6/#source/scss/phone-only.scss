@@ -411,3 +411,59 @@ h2 {
 		}
 	}
 }
+
+#section6 {
+	padding: 0 0 5vh;
+	border-top: 80px solid transparent;
+	margin-top: -80px;
+
+	.text {
+		margin-bottom: 15px;
+		text-align: center;
+		height: auto;
+		width: 100%;
+
+		a {
+			display: none;
+		}
+	}
+
+	#posts {
+
+		&>img:nth-child(1) {
+			top: 55%;
+			left: -8%;
+		}
+
+		&>img:nth-child(2) {
+			top: 80%;
+			right: 0%;
+		}
+
+		&>img:nth-child(3) {
+			top: -70px;
+			left: 58%;
+		}
+
+		.post {
+			width: 261px;
+
+			h3 {
+				margin-bottom: 8px;
+			}
+
+			a:last-child {
+				margin-top: 5px;
+			}
+
+			img {
+				height: 185px;
+			}
+		}
+
+		// posts 2,3,4
+		& .post:nth-child(n+5):nth-child(-n+7) {
+			display: none;
+		}
+	}
+}

@@ -2052,4 +2052,34 @@ footer {
           #section5 .wrapper .photo #scr3 span #img img:nth-child(2) {
             height: 30px;
             right: -50px;
-            bottom: 40%; } }
+            bottom: 40%; }
+  #section6 {
+    padding: 0 0 5vh;
+    border-top: 80px solid transparent;
+    margin-top: -80px; }
+    #section6 .text {
+      margin-bottom: 15px;
+      text-align: center;
+      height: auto;
+      width: 100%; }
+      #section6 .text a {
+        display: none; }
+    #section6 #posts > img:nth-child(1) {
+      top: 55%;
+      left: -8%; }
+    #section6 #posts > img:nth-child(2) {
+      top: 80%;
+      right: 0%; }
+    #section6 #posts > img:nth-child(3) {
+      top: -70px;
+      left: 58%; }
+    #section6 #posts .post {
+      width: 261px; }
+      #section6 #posts .post h3 {
+        margin-bottom: 8px; }
+      #section6 #posts .post a:last-child {
+        margin-top: 5px; }
+      #section6 #posts .post img {
+        height: 185px; }
+    #section6 #posts .post:nth-child(n+5):nth-child(-n+7) {
+      display: none; } }
