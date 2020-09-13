@@ -984,17 +984,17 @@ footer {
 	}
 }
 
-// 1200-1799px - done
+// 1200-1799px
 @media (max-width: 1799px) {
 	@import "desktop-up.scss";
 }
 
-// 900-1199px -done
+// 900-1199px
 @media (max-width: 1199px) {
 	@import "tablet-landscape-up.scss";
 }
 
-// 600-899px - done
+// 600-899px
 @media (max-width: 899px) {
 	@import "tablet-portrait-up.scss";
 }
