@@ -269,3 +269,88 @@ footer {
 		margin-top: 50px;
 	}
 }
+
+// 1200-1799px X 0-767px
+@media (max-height: 767px) {
+	#section1 {
+		padding: 14vh 0 25vh 0;
+
+		form {
+
+			h1 {
+				margin-top: 0;
+			}
+
+			#form-group {
+				margin-top: 0;
+
+				#select {
+					margin-top: 6vh;
+
+					.select-wrap {
+						margin: 0 3vw 4vh 0;
+					}
+				}
+			}
+
+			input {
+				margin-top: 0;
+			}
+		}
+	}
+
+	#section2 {
+		padding: 0 5% 25vh;
+	}
+
+	#section3 {
+		padding: 0 5% 25vh;
+		border-top: 16vh solid transparent;
+		margin-top: -16vh;
+
+		#cards {
+			.card {
+				margin: 7vh 20px 0 0;
+			}
+		}
+	}
+
+	#section4 {
+		padding: 0 5% 25vh;
+	}
+
+	#section5 {
+		padding: 0 5% 25vh;
+		border-top: 13vh solid transparent;
+		margin-top: -13vh;
+
+		#wrapper1 {
+			#h2 {
+				margin-bottom: 3vh;
+			}
+		}
+
+		.wrapper {
+			.photo {
+				#scr3 {
+					width: 50vh;
+
+					img:first-child {
+						max-width: 100%;
+						height: auto;
+					}
+				}
+			}
+		}
+	}
+
+	#section6 {
+		padding: 0 5% 10vh;
+		border-top: 13vh solid transparent;
+		margin-top: -13vh;
+
+		.text {
+			margin-bottom: 4vh;
+		}
+	}
+}

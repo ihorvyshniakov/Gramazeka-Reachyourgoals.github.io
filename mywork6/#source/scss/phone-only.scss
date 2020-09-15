@@ -72,16 +72,6 @@ nav {
 	}
 }
 
-@media (max-height: 500px) {
-	nav {
-		header {
-			div:last-child {
-				margin: 2% 0 4%;
-			}
-		}
-	}
-}
-
 .btn {
 	line-height: 35px;
 }
@@ -577,4 +567,63 @@ footer {
 			margin-right: 25px;
 		}
 	}
+}
+
+// Height 0-599px
+@media (max-height: 599px) {
+
+	// Navbar
+	@media (max-height: 500px) {
+		nav {
+			header {
+				div:last-child {
+					margin: 2% 0 4%;
+				}
+			}
+		}
+	}
+
+	nav {
+		height: 50px;
+
+		#img {
+			img {
+				height: 37px;
+				width: 37px;
+			}
+		}
+
+		#burger {
+			width: 35px;
+			top: 10px;
+		}
+	}
+
+	#section1 {
+		flex-direction: row;
+
+		&>h1:first-child {
+			font-size: 8vh;
+			line-height: 9vh;
+			margin-bottom: 0;
+		}
+
+		form {
+			width: 50%;
+			order: 0;
+
+			#form-group {
+				#select {
+					.select-wrap {
+						margin: 0;
+					}
+				}
+			}
+		}
+
+		#scr1 {
+			width: 50%;
+		}
+	}
+
 }
