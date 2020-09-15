@@ -2236,11 +2236,11 @@ footer {
     footer #social a {
       margin-right: 25px; } }
 
-@media (max-width: 599px) and (max-height: 599px) and (max-height: 500px) {
+@media (max-width: 599px) and (max-height: 533px) and (max-height: 500px) {
   nav header div:last-child {
     margin: 2% 0 4%; } }
 
-@media (max-width: 599px) and (max-height: 599px) {
+@media (max-width: 599px) and (max-height: 533px) {
   nav {
     height: 50px; }
     nav #img img {
