@@ -570,7 +570,7 @@ footer {
 }
 
 // Height 0-599px
-@media (max-height: 533px) {
+@media (max-height: 520px) {
 
 	// Navbar
 	@media (max-height: 500px) {
@@ -615,7 +615,8 @@ footer {
 			#form-group {
 				#select {
 					.select-wrap {
-						margin: 0;
+						margin: 0 2vw 2vh 0;
+						width: 46%;
 					}
 				}
 			}
