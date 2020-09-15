@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	parent = document.querySelectorAll('.parent');
-	$('nav').click(function (event) {
+	$('#burger, header').click(function (event) {
 		$('#burger, #img img, header').toggleClass('active');
 		$('body').toggleClass('lock');
 	});

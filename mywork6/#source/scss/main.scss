@@ -133,8 +133,7 @@ main {
 	height: auto;
 	max-width: 100%;
 	margin-top: -80px;
-	padding-top: 140px;
-	padding-bottom: 20vh;
+	padding: 140px 0 25vh 0;
 
 	&>h1:first-child {
 		display: none;
@@ -309,7 +308,7 @@ main {
 #section2 {
 	height: auto;
 	max-width: 100%;
-	padding: 100px 5% 10vh;
+	padding: 0 5% 25vh;
 
 	display: flex;
 	align-items: center;
@@ -462,9 +461,9 @@ article {
 #section3 {
 	height: auto;
 	max-width: 100%;
-	padding: 120px 5% 10vh;
-	border-top: 90px solid transparent;
-	margin-top: -90px;
+	padding: 0 5% 25vh;
+	border-top: 25vh solid transparent;
+	margin-top: -25vh;
 
 	display: flex;
 	flex-direction: column;
@@ -533,7 +532,7 @@ article {
 #section4 {
 	height: auto;
 	max-width: 100%;
-	padding: 180px 5% 10vh;
+	padding: 0 5% 25vh;
 
 	display: flex;
 	align-items: center;
@@ -582,9 +581,9 @@ article {
 #section5 {
 	height: auto;
 	max-width: 100%;
-	padding: 120px 5% 10vh;
-	border-top: 20px solid transparent;
-	margin-top: -20px;
+	padding: 0 5% 25vh;
+	border-top: 18vh solid transparent;
+	margin-top: -18vh;
 
 	display: flex;
 	flex-direction: column;
@@ -754,7 +753,9 @@ article {
 #section6 {
 	height: auto;
 	max-width: 100%;
-	padding: 180px 5% 10vh;
+	padding: 0 5% 10vh;
+	border-top: 20vh solid transparent;
+	margin-top: -20vh;
 
 	display: flex;
 	flex-direction: column;
@@ -828,6 +829,14 @@ article {
 
 			a {
 				display: inline-block;
+
+				&:link {
+					color: #FB8F1D;
+				}
+
+				&:visited {
+					color: dodgerblue;
+				}
 			}
 
 			a:last-child {
@@ -998,6 +1007,91 @@ footer {
 // 1200-1799px
 @media (max-width: 1799px) {
 	@import "desktop-up.scss";
+
+	// 1200-1799px X 0-767px
+	@media (max-height: 767px) {
+		#section1 {
+			padding: 14vh 0 25vh 0;
+
+			form {
+
+				h1 {
+					margin-top: 0;
+				}
+
+				#form-group {
+					margin-top: 0;
+
+					#select {
+						margin-top: 6vh;
+
+						.select-wrap {
+							margin: 0 3vw 4vh 0;
+						}
+					}
+				}
+
+				input {
+					margin-top: 0;
+				}
+			}
+		}
+
+		#section2 {
+			padding: 0 5% 25vh;
+		}
+
+		#section3 {
+			padding: 0 5% 25vh;
+			border-top: 16vh solid transparent;
+			margin-top: -16vh;
+
+			#cards {
+				.card {
+					margin: 7vh 20px 0 0;
+				}
+			}
+		}
+
+		#section4 {
+			padding: 0 5% 25vh;
+		}
+
+		#section5 {
+			padding: 0 5% 25vh;
+			border-top: 13vh solid transparent;
+			margin-top: -13vh;
+
+			#wrapper1 {
+				#h2 {
+					margin-bottom: 3vh;
+				}
+			}
+
+			.wrapper {
+				.photo {
+					#scr3 {
+						width: 50vh;
+
+						img:first-child {
+							max-width: 100%;
+							height: auto;
+						}
+					}
+				}
+			}
+		}
+
+		#section6 {
+			padding: 0 5% 10vh;
+			border-top: 13vh solid transparent;
+			margin-top: -13vh;
+
+			.text {
+				margin-bottom: 4vh;
+			}
+		}
+	}
 }
 
 // 900-1199px

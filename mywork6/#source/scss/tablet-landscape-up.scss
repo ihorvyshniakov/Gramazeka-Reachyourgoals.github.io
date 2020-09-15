@@ -41,6 +41,7 @@ nav {
 		z-index: 3;
 		right: 8%;
 		top: 15px;
+		cursor: pointer;
 
 		&>span {
 			background: $color_1;
@@ -156,6 +157,8 @@ nav {
 }
 
 #section1 {
+	padding: 140px 0 20vh;
+
 	form {
 		padding-left: 5%;
 
@@ -204,7 +207,7 @@ nav {
 }
 
 #section2 {
-	padding: 40px 0 10vh;
+	padding: 0 5% 20vh;
 
 	.article {
 		padding: 0 7% 0 15%;
@@ -241,8 +244,9 @@ h2 {
 }
 
 #section3 {
-	border-top: 60px solid transparent;
-	margin-top: -60px;
+	padding: 0 5% 20vh;
+	border-top: 24vh solid transparent;
+	margin-top: -24vh;
 
 	#cards {
 		&>img:nth-child(1) {
@@ -259,11 +263,15 @@ h2 {
 			top: -24%;
 			right: 30%;
 		}
+
+		.card {
+			margin: 4vh 20px 0 0;
+		}
 	}
 }
 
 #section4 {
-	padding: 110px 5% 10vh;
+	padding: 0 5% 20vh;
 
 	.article {
 		padding: 0 15% 0 7%;
@@ -288,9 +296,9 @@ h2 {
 }
 
 #section5 {
-	padding: 100px 0 10vh;
-	border-top: 40px solid transparent;
-	margin-top: -40px;
+	padding: 0 5% 20vh;
+	border-top: 18vh solid transparent;
+	margin-top: -18vh;
 	align-items: start;
 
 	#wrapper1 {
@@ -298,6 +306,8 @@ h2 {
 		justify-content: space-evenly;
 
 		#h2 {
+			margin-bottom: 3vh;
+
 			h2 {
 				padding: 0;
 			}
@@ -361,7 +371,9 @@ h2 {
 }
 
 #section6 {
-	padding: 100px 0 10vh;
+	padding: 0 0 10vh;
+	border-top: 19vh solid transparent;
+	margin-top: -19vh;
 
 	.text {
 		margin-bottom: 30px;

@@ -172,8 +172,7 @@ main {
   height: auto;
   max-width: 100%;
   margin-top: -80px;
-  padding-top: 140px;
-  padding-bottom: 20vh; }
+  padding: 140px 0 25vh 0; }
   #section1 > h1:first-child {
     display: none; }
   #section1 > img:nth-child(2) {
@@ -292,7 +291,7 @@ main {
 #section2 {
   height: auto;
   max-width: 100%;
-  padding: 100px 5% 10vh;
+  padding: 0 5% 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -414,9 +413,9 @@ article {
 #section3 {
   height: auto;
   max-width: 100%;
-  padding: 120px 5% 10vh;
-  border-top: 90px solid transparent;
-  margin-top: -90px;
+  padding: 0 5% 25vh;
+  border-top: 25vh solid transparent;
+  margin-top: -25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -471,7 +470,7 @@ article {
 #section4 {
   height: auto;
   max-width: 100%;
-  padding: 180px 5% 10vh;
+  padding: 0 5% 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -511,9 +510,9 @@ article {
 #section5 {
   height: auto;
   max-width: 100%;
-  padding: 120px 5% 10vh;
-  border-top: 20px solid transparent;
-  margin-top: -20px;
+  padding: 0 5% 25vh;
+  border-top: 18vh solid transparent;
+  margin-top: -18vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -666,7 +665,9 @@ article {
 #section6 {
   height: auto;
   max-width: 100%;
-  padding: 180px 5% 10vh;
+  padding: 0 5% 10vh;
+  border-top: 20vh solid transparent;
+  margin-top: -20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -728,6 +729,10 @@ article {
         margin: 0; }
       #section6 #posts .post a {
         display: inline-block; }
+        #section6 #posts .post a:link {
+          color: #FB8F1D; }
+        #section6 #posts .post a:visited {
+          color: dodgerblue; }
       #section6 #posts .post a:last-child {
         font-weight: 600;
         font-size: 15px;
@@ -912,7 +917,7 @@ footer {
     width: 175px;
     font-size: 1.2em; }
   #section2 {
-    padding: 40px 5% 10vh; }
+    padding: 0 5% 25vh; }
     #section2 .article {
       padding: 0 10% 0 20%; }
       #section2 .article br {
@@ -936,7 +941,7 @@ footer {
     top: -20%;
     right: 35%; }
   #section4 {
-    padding: 120px 5% 10vh; }
+    padding: 0 5% 25vh; }
     #section4 .article img:nth-last-of-type(2) {
       top: -16%;
       left: 18.5%; }
@@ -959,9 +964,7 @@ footer {
   #section5 .wrapper .photo {
     margin-left: 6%; }
   #section6 {
-    padding: 120px 5% 10vh;
-    border-top: 30px solid transparent;
-    margin-top: -30px; }
+    padding: 0 5% 10vh; }
     #section6 #posts {
       width: 90%;
       -webkit-box-pack: center;
@@ -1008,6 +1011,47 @@ footer {
   footer span {
     margin-top: 50px; } }
 
+@media (max-width: 1799px) and (max-height: 767px) {
+  #section1 {
+    padding: 14vh 0 25vh 0; }
+    #section1 form h1 {
+      margin-top: 0; }
+    #section1 form #form-group {
+      margin-top: 0; }
+      #section1 form #form-group #select {
+        margin-top: 6vh; }
+        #section1 form #form-group #select .select-wrap {
+          margin: 0 3vw 4vh 0; }
+    #section1 form input {
+      margin-top: 0; }
+  #section2 {
+    padding: 0 5% 25vh; }
+  #section3 {
+    padding: 0 5% 25vh;
+    border-top: 16vh solid transparent;
+    margin-top: -16vh; }
+    #section3 #cards .card {
+      margin: 7vh 20px 0 0; }
+  #section4 {
+    padding: 0 5% 25vh; }
+  #section5 {
+    padding: 0 5% 25vh;
+    border-top: 13vh solid transparent;
+    margin-top: -13vh; }
+    #section5 #wrapper1 #h2 {
+      margin-bottom: 3vh; }
+    #section5 .wrapper .photo #scr3 {
+      width: 50vh; }
+      #section5 .wrapper .photo #scr3 img:first-child {
+        max-width: 100%;
+        height: auto; }
+  #section6 {
+    padding: 0 5% 10vh;
+    border-top: 13vh solid transparent;
+    margin-top: -13vh; }
+    #section6 .text {
+      margin-bottom: 4vh; } }
+
 @media (max-width: 1199px) {
   body.lock {
     overflow: hidden; }
@@ -1044,7 +1088,8 @@ footer {
       height: 30px;
       z-index: 3;
       right: 8%;
-      top: 15px; }
+      top: 15px;
+      cursor: pointer; }
       nav #burger > span {
         background: #FB8F1D;
         position: absolute;
@@ -1159,34 +1204,36 @@ footer {
           height: 55px; }
   .btn {
     line-height: 45px; }
-  #section1 form {
-    padding-left: 5%; }
-    #section1 form img:nth-child(2) {
-      top: 58%;
-      left: -2%; }
-    #section1 form img:nth-child(3) {
-      bottom: -7%;
-      right: 0; }
-    #section1 form img:nth-child(4) {
-      right: 13%;
-      top: 6%; }
-    #section1 form #form-group {
-      margin-top: 55px; }
-      #section1 form #form-group #select {
-        margin-top: 61px; }
-        #section1 form #form-group #select .select-wrap {
-          width: 160px;
-          height: 42px;
-          margin: 10px 10px 0 0; }
-        #section1 form #form-group #select .dropdown {
-          width: 100%; }
-    #section1 form input {
-      width: 165px;
-      margin-top: 31px; }
-  #section1 #scr1 {
-    padding-right: 3%; }
+  #section1 {
+    padding: 140px 0 20vh; }
+    #section1 form {
+      padding-left: 5%; }
+      #section1 form img:nth-child(2) {
+        top: 58%;
+        left: -2%; }
+      #section1 form img:nth-child(3) {
+        bottom: -7%;
+        right: 0; }
+      #section1 form img:nth-child(4) {
+        right: 13%;
+        top: 6%; }
+      #section1 form #form-group {
+        margin-top: 55px; }
+        #section1 form #form-group #select {
+          margin-top: 61px; }
+          #section1 form #form-group #select .select-wrap {
+            width: 160px;
+            height: 42px;
+            margin: 10px 10px 0 0; }
+          #section1 form #form-group #select .dropdown {
+            width: 100%; }
+      #section1 form input {
+        width: 165px;
+        margin-top: 31px; }
+    #section1 #scr1 {
+      padding-right: 3%; }
   #section2 {
-    padding: 40px 0 10vh; }
+    padding: 0 5% 20vh; }
     #section2 .article {
       padding: 0 7% 0 15%; }
       #section2 .article img {
@@ -1205,8 +1252,9 @@ footer {
   .text {
     width: 90%; }
   #section3 {
-    border-top: 60px solid transparent;
-    margin-top: -60px; }
+    padding: 0 5% 20vh;
+    border-top: 24vh solid transparent;
+    margin-top: -24vh; }
     #section3 #cards > img:nth-child(1) {
       bottom: 25%;
       left: -6%; }
@@ -1216,8 +1264,10 @@ footer {
     #section3 #cards > img:nth-child(3) {
       top: -24%;
       right: 30%; }
+    #section3 #cards .card {
+      margin: 4vh 20px 0 0; }
   #section4 {
-    padding: 110px 5% 10vh; }
+    padding: 0 5% 20vh; }
     #section4 .article {
       padding: 0 15% 0 7%; }
       #section4 .article img:nth-last-of-type(2) {
@@ -1230,9 +1280,9 @@ footer {
       top: 7%;
       right: -8%; }
   #section5 {
-    padding: 100px 0 10vh;
-    border-top: 40px solid transparent;
-    margin-top: -40px;
+    padding: 0 5% 20vh;
+    border-top: 18vh solid transparent;
+    margin-top: -18vh;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start; }
@@ -1241,8 +1291,10 @@ footer {
       -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
       justify-content: space-evenly; }
-      #section5 #wrapper1 #h2 h2 {
-        padding: 0; }
+      #section5 #wrapper1 #h2 {
+        margin-bottom: 3vh; }
+        #section5 #wrapper1 #h2 h2 {
+          padding: 0; }
       #section5 #wrapper1 div:last-child {
         width: 300px;
         margin-left: 0; }
@@ -1276,7 +1328,9 @@ footer {
             max-width: 100%;
             height: auto; }
   #section6 {
-    padding: 100px 0 10vh; }
+    padding: 0 0 10vh;
+    border-top: 19vh solid transparent;
+    margin-top: -19vh; }
     #section6 .text {
       margin-bottom: 30px; }
     #section6 #posts {
@@ -1441,7 +1495,7 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding: 0 0 5vh; }
+    padding: 0 0 10vh; }
     #section2 > h2:first-child {
       display: block;
       width: 100%;
@@ -1500,7 +1554,9 @@ footer {
 
 @media (max-width: 899px) {
   #section3 {
-    padding: 90px 5% 5vh; }
+    padding: 0 5% 10vh;
+    border-top: 15vh solid transparent;
+    margin-top: -15vh; }
     #section3 .text {
       width: 100%; }
     #section3 #cards {
@@ -1532,7 +1588,7 @@ footer {
         padding: 10px 20px;
         width: 50%; }
   #section4 {
-    padding: 80px 5% 5vh;
+    padding: 0 5% 10vh;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     -webkit-box-pack: center;
@@ -1588,9 +1644,9 @@ footer {
         top: 7%;
         right: -8%; }
   #section5 {
-    padding: 90px 0 5vh;
-    border-top: 0;
-    margin-top: 0; }
+    padding: 0 0 10vh;
+    border-top: 15vh solid transparent;
+    margin-top: -15vh; }
     #section5 #wrapper1 {
       display: block;
       width: 100%; }
@@ -1668,7 +1724,9 @@ footer {
             max-width: 100%;
             height: auto; }
   #section6 {
-    padding: 40px 0 5vh; }
+    padding: 0 0 5vh;
+    border-top: 10vh solid transparent;
+    margin-top: -10vh; }
     #section6 .text {
       margin-bottom: 20px; }
     #section6 #posts {

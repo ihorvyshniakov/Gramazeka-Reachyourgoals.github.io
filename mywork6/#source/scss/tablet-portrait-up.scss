@@ -129,7 +129,7 @@
 #section2 {
 	flex-wrap: wrap;
 	justify-content: center;
-	padding: 0 0 5vh;
+	padding: 0 0 10vh;
 
 	&>h2:first-child {
 		display: block;
@@ -200,7 +200,9 @@ p {
 }
 
 #section3 {
-	padding: 90px 5% 5vh;
+	padding: 0 5% 10vh;
+	border-top: 15vh solid transparent;
+	margin-top: -15vh;
 
 	.text {
 		width: 100%;
@@ -239,7 +241,7 @@ p {
 }
 
 #section4 {
-	padding: 80px 5% 5vh;
+	padding: 0 5% 10vh;
 	flex-wrap: wrap;
 	justify-content: center;
 
@@ -299,9 +301,9 @@ p {
 }
 
 #section5 {
-	padding: 90px 0 5vh;
-	border-top: 0;
-	margin-top: 0;
+	padding: 0 0 10vh;
+	border-top: 15vh solid transparent;
+	margin-top: -15vh;
 
 	#wrapper1 {
 		display: block;
@@ -390,7 +392,9 @@ p {
 }
 
 #section6 {
-	padding: 40px 0 5vh;
+	padding: 0 0 5vh;
+	border-top: 10vh solid transparent;
+	margin-top: -10vh;
 
 	.text {
 		margin-bottom: 20px;

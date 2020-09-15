@@ -1,5 +1,3 @@
-// add 1366x768 resolution(maybe for height)
-
 nav {
 	height: 60px;
 
@@ -75,7 +73,7 @@ nav {
 }
 
 #section2 {
-	padding: 40px 5% 10vh;
+	padding: 0 5% 25vh;
 
 	.article {
 		padding: 0 10% 0 20%;
@@ -127,7 +125,7 @@ nav {
 }
 
 #section4 {
-	padding: 120px 5% 10vh;
+	padding: 0 5% 25vh;
 
 	.article {
 		img:nth-last-of-type(2) {
@@ -188,9 +186,7 @@ nav {
 }
 
 #section6 {
-	padding: 120px 5% 10vh;
-	border-top: 30px solid transparent;
-	margin-top: -30px;
+	padding: 0 5% 10vh;
 
 	#posts {
 		width: 90%;
