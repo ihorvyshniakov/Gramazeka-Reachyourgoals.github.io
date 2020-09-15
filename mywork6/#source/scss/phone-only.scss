@@ -570,19 +570,7 @@ footer {
 }
 
 // Height 0-599px
-@media (max-height: 520px) {
-
-	// Navbar
-	@media (max-height: 500px) {
-		nav {
-			header {
-				div:last-child {
-					margin: 2% 0 4%;
-				}
-			}
-		}
-	}
-
+@media (max-height: 499px) {
 	nav {
 		height: 50px;
 
@@ -596,6 +584,12 @@ footer {
 		#burger {
 			width: 35px;
 			top: 10px;
+		}
+
+		header {
+			div:last-child {
+				margin: 2% 0 4%;
+			}
 		}
 	}
 
