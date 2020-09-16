@@ -2236,7 +2236,7 @@ footer {
     footer #social a {
       margin-right: 25px; } }
 
-@media (max-width: 599px) and (max-height: 499px) {
+@media (max-width: 599px) and (orientation: landscape) {
   nav {
     height: 50px; }
     nav #img img {
