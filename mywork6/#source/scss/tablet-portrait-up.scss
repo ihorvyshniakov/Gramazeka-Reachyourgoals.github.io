@@ -557,7 +557,8 @@ footer {
 }
 
 // Height 0-599px
-@media (max-height: 499px) {
+@media (max-height: 499px),
+(orientation: landscape) {
 	nav {
 		height: 50px;
 
