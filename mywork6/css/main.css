@@ -2314,8 +2314,14 @@ footer {
         bottom: 15px;
         right: -10px; }
       #section1 #scr1 img:last-child {
-        max-height: 100%;
-        max-width: 90%; }
+        max-width: 100%;
+        height: inherit; }
   #section2 > h2:first-child {
     font-size: 7vh;
-    line-height: 8vh; } }
+    line-height: 8vh; }
+  #section2,
+  #section3,
+  #section4,
+  #section5,
+  #section6 {
+    display: none; } }

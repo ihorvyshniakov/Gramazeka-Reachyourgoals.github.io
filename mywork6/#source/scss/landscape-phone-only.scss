@@ -107,8 +107,8 @@ p {
 		}
 
 		& img:last-child {
-			max-height: 100%;
-			max-width: 90%;
+			max-width: 100%;
+			height: inherit;
 		}
 	}
 }
@@ -118,4 +118,12 @@ p {
 		font-size: 7vh;
 		line-height: 8vh;
 	}
+}
+
+#section2,
+#section3,
+#section4,
+#section5,
+#section6 {
+	display: none;
 }
