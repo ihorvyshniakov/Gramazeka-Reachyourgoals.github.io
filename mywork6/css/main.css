@@ -1854,85 +1854,6 @@ footer {
     footer span {
       margin: 20px auto 20px; } }
 
-@media (max-width: 899px) and (max-height: 499px) {
-  nav {
-    height: 50px; }
-    nav #img {
-      padding-left: 20px; }
-      nav #img img {
-        height: 37px;
-        width: 37px; }
-    nav #burger {
-      width: 35px;
-      top: 10px;
-      right: 20px; }
-    nav header div:last-child {
-      margin: 2% 0 4%; }
-  p {
-    margin: 13px 0 15px; }
-  .btn {
-    line-height: 35px; }
-  #section1 {
-    padding: 85px 0 10vh;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row; }
-    #section1 > h1:first-child {
-      font-size: 8vh;
-      line-height: 9vh;
-      margin-bottom: 3px; }
-    #section1 > img:nth-child(2) {
-      width: 18.51px;
-      height: 18px;
-      right: 60%;
-      top: 150px; }
-    #section1 form {
-      width: 50%;
-      -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-      order: 0;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      #section1 form #form-group > img:nth-child(1) {
-        width: 14.55px;
-        height: 14px;
-        bottom: -15px;
-        left: 30px; }
-      #section1 form #form-group #select {
-        -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-        margin-top: 15px; }
-        #section1 form #form-group #select .select-wrap {
-          margin: 0 2vw 2vh 0;
-          width: 46%;
-          height: 35px; }
-          #section1 form #form-group #select .select-wrap:nth-child(even) {
-            margin-right: 0; }
-      #section1 form p {
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 0.05rem; }
-        #section1 form p:after {
-          top: 30px; }
-      #section1 form input {
-        width: 130px;
-        margin-top: 5px; }
-    #section1 #scr1 {
-      width: 50%;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center; }
-      #section1 #scr1 > img:first-child {
-        width: 18.51px;
-        height: 18px;
-        bottom: 15px;
-        right: -10px; }
-      #section1 #scr1 img:last-child {
-        max-height: 100%;
-        max-width: 90%; } }
-
 @media (max-width: 599px) {
   nav #img {
     padding-left: 20px; }
@@ -2315,7 +2236,7 @@ footer {
     footer #social a {
       margin-right: 25px; } }
 
-@media (max-width: 599px) and (max-height: 499px) {
+@media (max-height: 499px) {
   nav {
     height: 50px; }
     nav #img {
@@ -2344,6 +2265,8 @@ footer {
       line-height: 9vh;
       margin-bottom: 3px; }
     #section1 > img:nth-child(2) {
+      width: 18.51px;
+      height: 18px;
       right: 60%;
       top: 150px;
       left: auto; }
@@ -2355,6 +2278,11 @@ footer {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
+      #section1 form #form-group > img:nth-child(1) {
+        width: 14.55px;
+        height: 14px;
+        bottom: -15px;
+        left: 30px; }
       #section1 form #form-group #select {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -2379,7 +2307,14 @@ footer {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      #section1 #scr1 > img:nth-child(1) {
+      #section1 #scr1 > img:first-child {
+        width: 18.51px;
+        height: 18px;
+        bottom: 15px;
         right: -10px; }
       #section1 #scr1 img:last-child {
-        max-height: 100%; } }
+        max-height: 100%;
+        max-width: 90%; }
+  #section2 > h2:first-child {
+    font-size: 7vh;
+    line-height: 8vh; } }

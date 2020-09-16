@@ -1016,4 +1016,7 @@ footer {
 	@import "phone-only.scss";
 }
 
-// hide all long codes to 1 stroke
+// Height 0-499px landscape phones(0-480px)
+@media (max-height: 499px) {
+	@import "landcape-phone-only.scss";
+}
