@@ -1856,8 +1856,7 @@ footer {
 
 @media (max-width: 899px) and (max-height: 499px) {
   nav {
-    height: 50px;
-    border-bottom: 15px solid #000; }
+    height: 50px; }
     nav #img {
       padding-left: 20px; }
       nav #img img {
@@ -2329,8 +2328,7 @@ footer {
 
 @media (max-height: 499px) {
   nav {
-    height: 50px;
-    border-bottom: 15px solid #000; }
+    height: 50px; }
     nav #img {
       padding-left: 20px; }
       nav #img img {
