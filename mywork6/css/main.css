@@ -1856,7 +1856,10 @@ footer {
 
 @media (max-width: 899px) and (max-height: 499px) {
   nav {
-    height: 50px; }
+    height: 50px;
+    -webkit-border: 1px solid #000;
+    -moz-border: 1px solid #000;
+    border: 1px solid #000; }
     nav #img {
       padding-left: 20px; }
       nav #img img {
@@ -1865,10 +1868,7 @@ footer {
     nav #burger {
       width: 35px;
       top: 10px;
-      right: 20px;
-      -webkit-border: 1px solid #000;
-      -moz-border: 1px solid #000;
-      border: 1px solid #000; }
+      right: 20px; }
     nav header div:last-child {
       margin: 2% 0 4%; }
   p {
@@ -2331,7 +2331,10 @@ footer {
 
 @media (max-height: 499px) {
   nav {
-    height: 50px; }
+    height: 50px;
+    -webkit-border: 1px solid #000;
+    -moz-border: 1px solid #000;
+    border: 1px solid #000; }
     nav #img {
       padding-left: 20px; }
       nav #img img {
@@ -2340,10 +2343,7 @@ footer {
     nav #burger {
       width: 35px;
       top: 10px;
-      right: 20px;
-      -webkit-border: 1px solid #000;
-      -moz-border: 1px solid #000;
-      border: 1px solid #000; }
+      right: 20px; }
     nav header div:last-child {
       margin: 2% 0 4%; }
   p {
