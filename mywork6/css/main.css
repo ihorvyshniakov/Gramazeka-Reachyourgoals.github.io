@@ -1869,6 +1869,7 @@ footer {
       width: 35px;
       top: 10px;
       right: 20px;
+      -webkit-border: 0;
       border: 0; }
     nav header div:last-child {
       margin: 2% 0 4%; }
@@ -2345,6 +2346,7 @@ footer {
       width: 35px;
       top: 10px;
       right: 20px;
+      -webkit-border: 0;
       border: 0; }
     nav header div:last-child {
       margin: 2% 0 4%; }
