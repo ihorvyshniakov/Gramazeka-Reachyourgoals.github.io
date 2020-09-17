@@ -2239,7 +2239,7 @@ footer {
 @media (max-height: 499px) {
   nav {
     height: 50px;
-    border-bottom: 1px solid #000; }
+    border-bottom: 5px solid #000; }
     nav #img {
       padding-left: 20px; }
       nav #img img {
