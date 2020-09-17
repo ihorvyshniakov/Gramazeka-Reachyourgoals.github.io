@@ -1865,7 +1865,8 @@ footer {
     nav #burger {
       width: 35px;
       top: 10px;
-      right: 20px; }
+      right: 20px;
+      border: 1px solid #000; }
     nav header div:last-child {
       margin: 2% 0 4%; }
   p {
@@ -2337,7 +2338,8 @@ footer {
     nav #burger {
       width: 35px;
       top: 10px;
-      right: 20px; }
+      right: 20px;
+      border: 1px solid #000; }
     nav header div:last-child {
       margin: 2% 0 4%; }
   p {
