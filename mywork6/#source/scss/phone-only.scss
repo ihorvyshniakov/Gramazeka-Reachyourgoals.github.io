@@ -248,7 +248,7 @@ h2 {
 			justify-content: center;
 
 			// elements 5,6,7
-			&:nth-child(n+5):nth-child(-n+7) {
+			&:nth-child(n+5) {
 				display: none;
 			}
 

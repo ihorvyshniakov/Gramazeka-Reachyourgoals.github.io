@@ -303,6 +303,10 @@ main {
 			max-width: 100%;
 		}
 	}
+
+	#wrap1 {
+		display: none;
+	}
 }
 
 #section2 {
@@ -334,6 +338,10 @@ main {
 
 	.scr2 {
 		margin-left: 6%;
+	}
+
+	.wrap2 {
+		display: none;
 	}
 }
 
@@ -575,6 +583,10 @@ article {
 			top: 7%;
 			right: 7.5%;
 		}
+	}
+
+	.wrap2 {
+		display: none;
 	}
 }
 
