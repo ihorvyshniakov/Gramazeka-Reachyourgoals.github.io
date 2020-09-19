@@ -2664,6 +2664,8 @@ footer {
       padding: 0 0 0; }
       #section6 #posts .post h3 {
         margin-bottom: 8px; }
+      #section6 #posts .post a:first-child {
+        margin-top: 0; }
       #section6 #posts .post a:last-child {
         margin-top: 5px; }
       #section6 #posts .post img {
