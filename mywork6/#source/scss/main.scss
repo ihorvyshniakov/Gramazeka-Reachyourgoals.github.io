@@ -273,10 +273,6 @@ main {
 					-moz-background: #fff;
 					background: #fff;
 
-					// -webkit-appearance: none;
-					// -moz-appearance: none;
-					// appearance: none;
-
 					padding-left: 36px;
 					margin: 0 30px 35px 0;
 
@@ -825,6 +821,10 @@ article {
 			width: 261px;
 			margin-right: 25px;
 
+			.blob {
+				display: none;
+			}
+
 			p,
 			h3,
 			a {
@@ -852,7 +852,7 @@ article {
 				display: inline-block;
 			}
 
-			a:last-child {
+			a:nth-child(n-1) {
 				font-weight: 600;
 				font-size: 15px;
 				line-height: 28px;
