@@ -276,6 +276,10 @@ main {
           background: #fff;
           padding-left: 36px;
           margin: 0 30px 35px 0; }
+          #section1 form #form-group #select .dropdown > option:first-child {
+            -webkit-background: #fff;
+            -moz-background: #fff;
+            background: #fff; }
     #section1 form input {
       width: 185px;
       margin-top: 16px;
