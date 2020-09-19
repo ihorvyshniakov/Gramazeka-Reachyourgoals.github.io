@@ -1038,6 +1038,6 @@ footer {
 }
 
 // Height 0-499px landscape phones(0-480px)
-@media (max-height: 499px) {
+@media (max-height: 479px) {
 	@import "landscape-phone-only.scss";
 }

@@ -535,7 +535,7 @@ h2 {
 			.blob {
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
+				align-items: start;
 				height: 100%;
 
 				a:first-child {
@@ -557,6 +557,8 @@ h2 {
 						height: 145px;
 						max-height: 100%;
 						width: 35%;
+						margin-top: 0;
+						overflow: hidden;
 					}
 				}
 
@@ -565,6 +567,8 @@ h2 {
 						height: 162px;
 						max-height: 100%;
 						width: 35%;
+						margin-top: 0;
+						overflow: hidden;
 					}
 				}
 
@@ -573,6 +577,8 @@ h2 {
 						height: 187px;
 						max-height: 100%;
 						width: 35%;
+						margin-top: 0;
+						overflow: hidden;
 					}
 				}
 
@@ -581,6 +587,8 @@ h2 {
 						height: 212px;
 						max-height: 100%;
 						width: 35%;
+						margin-top: 0;
+						overflow: hidden;
 					}
 				}
 
