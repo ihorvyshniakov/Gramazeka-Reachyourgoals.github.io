@@ -450,13 +450,15 @@ h2 {
 
 	#posts {
 		&>img:nth-child(1) {
+			width: 18.42px;
+			height: 18px;
 			top: 55%;
-			left: -8%;
+			left: -10%;
 		}
 
 		&>img:nth-child(2) {
 			top: 80%;
-			right: 0%;
+			right: -3%;
 		}
 
 		&>img:nth-child(3) {
@@ -474,6 +476,10 @@ h2 {
 
 			a:last-child {
 				margin-top: 5px;
+			}
+
+			a:nth-child(n-1) {
+				margin: ;
 			}
 
 			img {

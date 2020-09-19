@@ -1787,7 +1787,7 @@ footer {
 
 @media (max-width: 899px) {
   footer {
-    margin-top: 10px; }
+    margin-top: 0; }
     footer .wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -2649,11 +2649,13 @@ footer {
       #section6 .text a {
         display: none; }
     #section6 #posts > img:nth-child(1) {
+      width: 18.42px;
+      height: 18px;
       top: 55%;
-      left: -8%; }
+      left: -10%; }
     #section6 #posts > img:nth-child(2) {
       top: 80%;
-      right: 0%; }
+      right: -3%; }
     #section6 #posts > img:nth-child(3) {
       top: -70px;
       left: 58%; }
