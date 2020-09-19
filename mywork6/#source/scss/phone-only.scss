@@ -483,7 +483,7 @@ h2 {
 		}
 
 		// posts 2,3,4
-		& .post:nth-child(n+5):nth-child(-n+7) {
+		& .post:nth-child(n+5) {
 			display: none;
 		}
 	}

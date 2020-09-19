@@ -470,8 +470,28 @@ h2 {
 }
 
 #section6 {
+	border-top: 20vh solid transparent;
+	margin-top: -20vh;
+
 	.text {
+		height: auto;
 		margin-bottom: 2vh;
+		display: table;
+
+		a {
+			margin: 0;
+			float: none;
+			display: table-cell;
+			vertical-align: bottom;
+
+			p {
+				line-height: 17px;
+
+				&::after {
+					top: 4px;
+				}
+			}
+		}
 	}
 
 	#posts {
@@ -479,35 +499,76 @@ h2 {
 			flex-direction: row;
 			width: 100%;
 			height: 55vh;
+			padding: 0;
 
 			&>:nth-last-child(n+2) {
 				display: none;
 			}
 
 			h3 {
-				margin-bottom: 1vh;
-				margin-top: 1.5vh;
-				font-size: 6vh;
+				margin-bottom: 3vh;
+				font-size: 5.5vh;
 			}
 
 			p {
-				font-size: 5.5vh;
+				font-size: 4.5vh;
+				line-height: 6vh;
 			}
 
 			.blob {
 				display: flex;
 				justify-content: space-between;
+				align-items: center;
 				height: 100%;
 
 				a:first-child {
-					height: 100%;
+					height: 134px;
 					margin-top: 0;
-					width: auto;
+					width: 35%;
+					overflow: hidden;
 
 					img {
-						height: 100%;
-						width: auto;
+						width: 100%;
+						height: auto;
+						display: block;
 					}
+				}
+
+				// img resizing
+				@media (min-width: 590px) {
+					a:first-child {
+						height: 145px;
+						max-height: 100%;
+						width: 35%;
+					}
+				}
+
+				@media (min-width: 650px) {
+					a:first-child {
+						height: 162px;
+						max-height: 100%;
+						width: 35%;
+					}
+				}
+
+				@media (min-width: 750px) {
+					a:first-child {
+						height: 187px;
+						max-height: 100%;
+						width: 35%;
+					}
+				}
+
+				@media (min-width: 850px) {
+					a:first-child {
+						height: 212px;
+						max-height: 100%;
+						width: 35%;
+					}
+				}
+
+				a:nth-child(n-1) {
+					margin-top: 1.5vh;
 				}
 
 				.tx {
@@ -515,17 +576,25 @@ h2 {
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+					justify-content: center;
 					text-align: center;
 
-					a:last-child {
-						margin-top: ;
+					h3,
+					p {
+						width: 80%;
 					}
 				}
 			}
 		}
 
+		& .post:nth-child(n+4) {
+			display: flex;
+		}
+
 		// posts 2,3,4
-		& .post:nth-child(n+5):nth-child(-n+7) {
+		& .post:nth-child(5),
+		& .post:nth-child(6),
+		& .post:nth-child(7) {
 			display: none;
 		}
 	}
