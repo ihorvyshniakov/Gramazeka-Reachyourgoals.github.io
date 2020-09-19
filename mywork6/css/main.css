@@ -2666,6 +2666,8 @@ footer {
         margin-bottom: 8px; }
       #section6 #posts .post a:last-child {
         margin-top: 5px; }
+      #section6 #posts .post a:nth-child(n-1) {
+        margin: 0; }
       #section6 #posts .post img {
         height: 230px; }
     #section6 #posts .post:nth-child(n+5) {
