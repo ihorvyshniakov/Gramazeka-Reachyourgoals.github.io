@@ -461,3 +461,10 @@ footer {
 		margin: 30px auto 20px;
 	}
 }
+
+// Height 0-499px landscape phones(0-480px)
+@media (max-height: 479px) {
+	#section1 {
+		img: nth-child(2)
+	}
+}

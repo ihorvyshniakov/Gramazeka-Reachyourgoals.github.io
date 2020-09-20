@@ -1389,6 +1389,10 @@ footer {
     footer span {
       margin: 30px auto 20px; } }
 
+@media (max-width: 1199px) and (max-height: 479px) {
+  #section1 {
+    img: nth-child(2); } }
+
 @media (max-width: 899px) {
   .btn {
     line-height: 40px; }
