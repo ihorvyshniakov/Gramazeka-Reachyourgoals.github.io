@@ -1,11 +1,15 @@
 $(document).ready(function () {
-	parent = document.querySelectorAll('.parent');
+	// parent = document.querySelectorAll('.parent');
+
+	// If we click on burger-menu
 	$('#burger, header').click(function (event) {
+		// toggle class 'active' to show menu
 		$('#burger, #img img, header').toggleClass('active');
+		// toggle class 'lock' to deny scroll page when menu is shown
 		$('body').toggleClass('lock');
 	});
 
-	// hide all ul excet first
+	// hide all ul except first
 	$('.item_global>ul').hide();
 
 	$('.item_global>h4').click(function () {
