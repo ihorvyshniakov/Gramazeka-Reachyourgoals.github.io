@@ -5,20 +5,24 @@
 	box-sizing: border-box;
 	font-family: 'Playfair Display', serif;
 }
+
 a {
 	text-decoration: none;
 }
+
 h1 {
 	font-family: 'Bangers', cursive;
 	font-size: 1.8vw;
 	width: 100%;
 }
+
 body {
 	width: 100%;
 	height: 100%;
 	display: flex;
 }
-#navbar{
+
+#navbar {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -27,19 +31,22 @@ body {
 	text-align: center;
 	border-right: 3px dashed #999;
 }
-#navbar header{
+
+#navbar header {
 	height: 15vmin;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	letter-spacing: 4px;
 }
-#menu__box{
+
+#menu__box {
 	height: 85vmin;
 	overflow: auto;
 	overflow-x: hidden;
 }
-#menu__box li{
+
+#menu__box li {
 	font-size: 15px;
 	border-top: 1px solid #000;
 	border-radius: 50px;
@@ -49,12 +56,14 @@ body {
 	flex-grow: 1;
 	height: 100px;
 }
-#navbar>a{
+
+#navbar>a {
 	padding: 0;
 	text-align: center;
 	letter-spacing: 5px;
 }
-.nav-link{
+
+.nav-link {
 	letter-spacing: 2px;
 	text-align: left;
 	padding: 10px 30px;
@@ -73,23 +82,27 @@ body {
 	right: 50px;
 }
 
-#main-doc{
+#main-doc {
 	position: absolute;
 	width: 75%;
 	margin-left: 25%;
 	padding: 30px;
 }
+
 section * {
 	padding-bottom: 20px;
 }
+
 section ul {
 	margin: 10px 0;
 	padding: 0 0 0 40px;
 }
+
 article {
 	padding: 0;
 	margin: 15px;
 }
+
 code {
 	display: block;
 	text-align-last: left;
@@ -107,9 +120,11 @@ code {
 		font-size: 20px;
 		width: 100%;
 	}
+
 	h2 {
 		padding-bottom: 0;
 	}
+
 	#navbar {
 		position: fixed;
 		top: 0;
@@ -120,6 +135,7 @@ code {
 		z-index: 1;
 		border: none;
 	}
+
 	#navbar header {
 		padding: 0;
 		height: 50px;
@@ -154,22 +170,24 @@ code {
 		background-color: #616161;
 		transition: all .5s ease-in-out;
 	}
+
 	.menu__btn>span::before {
 		content: '';
 		transform: translateY(-10px);
 	}
+
 	.menu__btn>span::after {
 		content: '';
 		transform: translateY(10px);
 	}
 
 	/* List of menu */
-	#menu__box{
+	#menu__box {
 		list-style-type: none;
 		position: absolute;
 		right: 0;
 		width: 380px;
-		display: flex;
+		display: none;
 		flex-direction: column;
 		background: #959595;
 		border-radius: 10px;
@@ -177,13 +195,15 @@ code {
 		transition: opacity .3s linear;
 		opacity: 0;
 	}
+
 	#menu__box li {
 		display: flex;
 		padding-bottom: 10px;
 		border-top: 0;
 		border-radius: 0;
 	}
-	#navbar a{
+
+	#navbar a {
 		padding: 0;
 		letter-spacing: 5px;
 		height: 100%;
@@ -192,28 +212,34 @@ code {
 		justify-content: center;
 		align-items: center;
 	}
-	#menu__box a{
+
+	#menu__box a {
 		height: 42px;
 		text-align: center;
 		display: flex;
 		text-transform: uppercase;
 	}
-	#menu__box a:hover{
+
+	#menu__box a:hover {
 		color: #fff;
 	}
 
 	/* animate burger menu */
-	#menu__toggle:checked~.menu__btn>span{
+	#menu__toggle:checked~.menu__btn>span {
 		transform: translateX(-50px);
 		background: transparent;
 	}
-	#menu__toggle:checked~.menu__btn>span::before{
+
+	#menu__toggle:checked~.menu__btn>span::before {
 		transform: rotate(45deg) translate(35px, -35px);
 	}
-	#menu__toggle:checked~.menu__btn>span::after{
+
+	#menu__toggle:checked~.menu__btn>span::after {
 		transform: rotate(-45deg) translate(35px, 35px);
 	}
-	#menu__toggle:checked~#menu__box{
+
+	#menu__toggle:checked~#menu__box {
+		display: block;
 		opacity: 1;
 		right: 0;
 	}
@@ -224,52 +250,62 @@ code {
 		padding: 10px 20px 20px;
 		margin: 50px 0 0 0;
 	}
+
 	section ul {
 		padding: 0 0 0 30px;
 	}
 
 	/*  */
-	#introduction{
+	#introduction {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#what_you_should_already_know{
+
+	#what_you_should_already_know {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#javascript_and_java{
+
+	#javascript_and_java {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#hello_world{
+
+	#hello_world {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#variables{
+
+	#variables {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#declaring_variables{
+
+	#declaring_variables {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
-	#variable_scope{
+
+	#variable_scope {
 		padding-top: 60px;
 		margin-top: -60px;
 	}
 }
+
 @media (max-width: 476px) {
-	#menu__box{
+	#menu__box {
 		height: 82vh;
 	}
 }
+
 @media (max-width: 380px) {
-	#menu__box{
+	#menu__box {
 		width: 100%;
 		height: 82vh;
 		position: absolute;
 		top: 50px;
 	}
+
 	#navbar {
 		position: fixed;
 		top: 0;
@@ -280,9 +316,11 @@ code {
 		align-items: center;
 		z-index: 1;
 	}
+
 	#navbar header {
 		display: block;
 	}
+
 	.menu__btn {
 		display: flex;
 		align-items: center;
@@ -290,6 +328,6 @@ code {
 		/* top: 5px;
 		right: 4%; */
 	}
-	#navbar a{
-	}
+
+	#navbar a {}
 }
