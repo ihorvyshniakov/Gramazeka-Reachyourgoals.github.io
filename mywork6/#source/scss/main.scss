@@ -762,6 +762,7 @@ article {
 						}
 
 						img:nth-child(2) {
+							display: block;
 							position: absolute;
 							right: 0;
 						}
@@ -1043,6 +1044,6 @@ footer {
 }
 
 // Height 0-499px landscape phones(0-480px)
-@media (max-height: 479px) {
+@media (max-height: 479px) and (orientation: landscape) {
 	@import "landscape-phone-only.scss";
 }
