@@ -13,15 +13,21 @@
 <body>
 
 	<div id="body">
+		<div id="message">
+			<div>
+				<p>Dear, IHOR your message is successfully sent!<br><br>We will call you back soon <span>=)</span></p>
+				<div></div>
+			</div>
+		</div>
 		<header>
 			<h1 id="title">Customer Review Survey Form</h1>
 			<p id="description">Thank you for taking time to help improve my services</p>
 		</header>
-		<form action="#" id="survey-form">
+		<form action="#" id="survey-form" name="ourForm">
 			<div class="form-group">
 				<label id="name-label" for="name">Name</label>
-				<input id="name" name="name" type="text" placeholder="Enter your name(1 word, Aa-Zz)"
-					pattern="^[A-Za-z]+$" required="">
+				<input id="name" name="name" type="text" placeholder="Enter your name(1 word, Aa-Zz)" pattern="^[A-Za-z]+$"
+					required="">
 			</div>
 			<div class="form-group">
 				<label id="email-label" for="email">E-mail</label>
@@ -85,8 +91,7 @@
 			</div>
 			<div class="form-group">
 				<p class="p-label">Any comments or suggestions? Welcome)</p>
-				<textarea id="comments" class="textarea" name="comment"
-					placeholder="Enter your comment here..."></textarea>
+				<textarea id="comments" class="textarea" name="comment" placeholder="Enter your comment here..."></textarea>
 			</div>
 			<button id="submit" type="submit">Submit</button>
 		</form>

@@ -14,7 +14,7 @@ body {
 
 header {
 	text-align: center;
-	padding-top: 3%;
+	padding: 3% 0 1.5%;
 	font-family: 'Chelsea Market', cursive;
 	font-size: 20px;
 	max-width: 700px;
@@ -27,14 +27,83 @@ header {
 	width: 100%;
 	background-color: rgba(117, 54, 141, 0.9);
 	color: #fff;
+	padding: 0 20px;
+	position: relative;
+}
+
+#survey-form:after {
+	content: '';
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(85, 85, 85, 0.9) url('../img/loading.gif') center / 50px no-repeat;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .3s ease;
+}
+
+#survey-form._sending:after {
+	opacity: 1;
+	visibility: visible;
+}
+
+#message {
+	/* display: flex; */
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background: rgba(131, 74, 152, 0.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	font-family: 'Chelsea Market', cursive;
+	font-style: italic;
+}
+
+#message>div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 35%;
+	margin: 0 auto;
 	padding: 0 30px;
+	border-radius: 20px;
+	background: #fff;
+	color: #000;
+	font-size: 20px;
+	position: relative;
+}
+
+#message>div>div {
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	background: url(../img/cross.svg) center no-repeat;
+	background-size: 30px;
+	width: 40px;
+	height: 40px;
+}
+
+#message p {
+	text-align: center;
+	line-height: 140%;
+}
+
+#message p>span {
+	font-style: normal;
 }
 
 #survey-form {
 	width: 100%;
 	max-width: 700px;
 	height: auto;
-	margin: 1.5% auto 0;
+	margin: 0 auto;
 	padding: 30px;
 	text-align: left;
 	font-family: 'Balsamiq Sans', cursive;
@@ -48,6 +117,31 @@ header {
 	font-size: 25px;
 	font-style: italic;
 	margin: 10px 0 0;
+}
+
+@media(max-width: 700px) {
+	#description {
+		display: none;
+	}
+
+	#title {
+		font-size: 6vh;
+	}
+
+	header {
+		padding-bottom: 3%;
+	}
+}
+
+@media(max-width: 450px) {
+	#survey-form {
+		padding: 20px;
+	}
+
+	label,
+	.p-label {
+		font-size: 4vh;
+	}
 }
 
 .form-group {
@@ -130,6 +224,7 @@ _:-ms-fullscreen,
 	margin: -3px 10px 0 0;
 	vertical-align: middle;
 }
+
 /* Chrome 28+ */
 @supports (-webkit-appearance:none) {
 	[type="checkbox"] {
@@ -180,6 +275,10 @@ button {
 	font-size: 19px;
 }
 
+button:hover {
+	background: rgb(61, 155, 155);
+}
+
 footer p {
 	text-align: center;
 	padding: 30px 0 20px;
@@ -187,7 +286,7 @@ footer p {
 
 /* Custom radio */
 
-.radio__box{
+.radio__box {
 	position: absolute;
 	margin: 0.3em 0 0 -1.55em;
 	width: 0.6em;
@@ -196,24 +295,27 @@ footer p {
 	background-color: #fff;
 	box-shadow: 0 0 0 0.1em #3e3e3e;
 }
+
 /* Checked */
-.check__input:checked + .radio__box{
+.check__input:checked+.radio__box {
 	background-image: url(../img/checked.svg);
 	background-size: 0.45em 0.45em;
 	background-repeat: no-repeat;
 	background-position: 0.1em 0.1em;
 }
+
 /* Focused */
-.check__input:focus + .radio__box{
-	box-shadow: 
-	0 0 0 0.1em #16c05a;
+.check__input:focus+.radio__box {
+	box-shadow:
+		0 0 0 0.1em #16c05a;
 }
 
 /* Custom checkbox */
 
-.check{
+.check {
 	padding-left: 1.7em;
 }
+
 .check__input {
 	position: absolute;
 	width: 1px;
@@ -221,7 +323,8 @@ footer p {
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 }
-.check__box{
+
+.check__box {
 	position: absolute;
 	margin: 0.3em 0 0 -1.55em;
 	width: 0.6em;
@@ -230,21 +333,25 @@ footer p {
 	background-color: #fff;
 	box-shadow: 0 0 0 0.1em #3e3e3e;
 }
+
 /* Checked */
-.check__input:checked + .check__box{
+.check__input:checked+.check__box {
 	background-image: url(../img/checked.svg);
 	background-size: 0.6em 0.6em;
 }
+
 /* Focused */
-.check__input:focus + .check__box{
-	box-shadow: 
-	0 0 0 0.1em #16c05a;
+.check__input:focus+.check__box {
+	box-shadow:
+		0 0 0 0.1em #16c05a;
 }
 
 /* Focus on elements */
 
-input:focus,select:focus,textarea:focus{
-	outline:none;
+input:focus,
+select:focus,
+textarea:focus {
+	outline: none;
 	/* 4 all browsers hide default focus */
 	border: 2px solid #16c05a;
 }
