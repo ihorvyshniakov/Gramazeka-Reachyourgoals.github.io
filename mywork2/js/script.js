@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
 			// add message
-			document.getElementById('message').innerHTML = "<div><p>Dear, "+formName.value+" your message is successfully sent!<br>Our shop very soon call you =)</p></div><div></div>";
+			document.getElementById('message').innerHTML = "<div><p>Dear, " + formName.value + " your message is successfully sent!<br>Our shop very soon call you =)</p></div>";
 
 			// send email to post
 
@@ -34,22 +34,32 @@ document.addEventListener('DOMContentLoaded', function () {
 				let result = await response.json();
 				// shows this response to user
 				// alert(result.message);
-				// clear all form fields
-				formPreview.innerHTML = '';
 				form.reset();
 				// hiding loading
 				form.classList.remove('_sending');
-				
-				// MESSAGE
-				document.getElementById('message').id='message_active';
-				document.getElementById('message_active').addEventListener('click', function () {
-					document.getElementById('message_active').id='message';
-				})
+				// clear error state of require fields
+				formRemoveError(input);
 
+				// MESSAGE
+				document.getElementById('message').id = 'message_active';
+				document.getElementById('message_active').addEventListener('click', function () {
+					document.getElementById('message_active').id = 'message';
+				})
 			} else {
-				alert("Error");
-				form.classList.remove('_sending');
-			}		
+				form.classList.add('_sending');
+				document.getElementById('message').innerHTML = '';
+				document.getElementById('message').innerHTML = "<img src='img/warning.png' alt='error'><br><h1>Error!</h1>";
+				// alert("Error");
+				setTimeout(function () {
+					form.classList.remove('_sending');
+
+					document.getElementById('message').id = 'message_error';
+
+					document.getElementById('message_error').addEventListener('click', function () {
+						document.getElementById('message_error').id = 'message';
+					})
+				}, 2000);
+			}
 		} else {
 			alert('Fill in required fields!');
 		}
@@ -75,10 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
 					error++;
 				}
 				// if it's checkbox and it's not checked
-			} else if (input.getAttribute('type') === "checkbox" && input.checked === false) {
-				// add error
-				formAddError(input);
-				error++;
 			} else {
 				// if string is empty -> error
 				if (input.value === '') {

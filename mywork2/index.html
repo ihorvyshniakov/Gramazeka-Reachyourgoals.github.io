@@ -13,29 +13,23 @@
 <body>
 
 	<div id="body">
-		<div id="message">
-			<div>
-				<p>Dear, IHOR your message is successfully sent!<br><br>We will call you back soon <span>=)</span></p>
-				<div></div>
-			</div>
-		</div>
+		<div id="message"></div>
 		<header>
 			<h1 id="title">Customer Review Survey Form</h1>
 			<p id="description">Thank you for taking time to help improve my services</p>
 		</header>
-		<form action="#" id="survey-form" name="ourForm">
+		<form id="survey-form" name="ourForm">
 			<div class="form-group">
-				<label id="name-label" for="name">Name</label>
-				<input id="name" name="name" type="text" placeholder="Enter your name(1 word, Aa-Zz)" pattern="^[A-Za-z]+$"
-					required="">
+				<label for="formName">Name*</label>
+				<input id="formName" name="name" type="text" placeholder="Enter your name" class="_req">
 			</div>
 			<div class="form-group">
-				<label id="email-label" for="email">E-mail</label>
-				<input id="email" name="email" type="email" placeholder="Enter your e-mail" required="">
+				<label for="formEmail">E-mail*</label>
+				<input id="formEmail" name="email" type="email" placeholder="Enter your e-mail" class="_email _req">
 			</div>
 			<div class="form-group">
-				<label id="number-label" for="number">Age (optional)</label>
-				<input id="number" name="age" type="number" placeholder="Age" min="10" max="99" required="">
+				<label for="number">Age</label>
+				<input id="number" name="age" type="number" placeholder="Age" min="10" max="99">
 			</div>
 			<div class="form-group">
 				<p class="p-label">Would you recommend my services to your friend?</p>
@@ -56,35 +50,34 @@
 				</label>
 			</div>
 			<div class="form-group">
-				<p class="p-label">How long did your order take?</p>
-				<select id="dropdown" name="time" required="">
+				<p class="p-label">How long did your order take?*</p>
+				<select id="dropdown" name="time" class="_req">
 					<option disabled="" selected="" value="">Choose your order time</option>
-					<option value="1w">&#8804;1 week</option>
-					<option value="2w">&#8804;2 week</option>
-					<option value="3w">&#8804;3 week</option>
-					<option value="1m">~1 month</option>
-					<option value="1mmore">&gt;1 month</option>
-				</select>
-			</div>
+					<option value="1 week">&#8804;1 week</option>
+					<option value="2 week">&#8804;2 week</option>
+					<option value="3 week">&#8804;3 week</option>
+					<option value="1 month">~1 month</option>
+					<option value="more than 1 month">&gt;1 month</option>
+				</select>			</div>
 			<div class="form-group">
 				<p class="p-label">What did you like mostly about my services?</p>
 				<label class="check">
-					<input class="check__input" value="talk" type="checkbox" name="like">
+					<input class="check__input" value="communication" type="checkbox" name="like_list[]">
 					<span class="check__box"></span>
 					Communication
 				</label>
 				<label class="check">
-					<input class="check__input" value="speed" type="checkbox" name="like">
+					<input class="check__input" value="speed" type="checkbox" name="like_list[]">
 					<span class="check__box"></span>
 					Speed of work
 				</label>
 				<label class="check">
-					<input class="check__input" value="profi" type="checkbox" name="like">
+					<input class="check__input" value="proficiency" type="checkbox" name="like_list[]">
 					<span class="check__box"></span>
 					Proficiency
 				</label>
 				<label class="check">
-					<input class="check__input" value="details" type="checkbox" name="like">
+					<input class="check__input" value="details" type="checkbox" name="like_list[]">
 					<span class="check__box"></span>
 					Attention to details
 				</label>
@@ -99,6 +92,8 @@
 			<p>All rights reserved ©</p>
 		</footer>
 	</div>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>

@@ -38,7 +38,7 @@ header {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: rgba(85, 85, 85, 0.9) url('../img/loading.gif') center / 50px no-repeat;
+	background: rgba(117, 54, 141, 0.7) url('../img/loading.gif') center / 50px no-repeat;
 	opacity: 0;
 	visibility: hidden;
 	transition: all .3s ease;
@@ -50,8 +50,11 @@ header {
 }
 
 #message {
-	/* display: flex; */
 	display: none;
+}
+
+#message_active {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: fixed;
@@ -65,7 +68,7 @@ header {
 	font-style: italic;
 }
 
-#message>div {
+#message_active>div {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -77,9 +80,10 @@ header {
 	color: #000;
 	font-size: 20px;
 	position: relative;
+	cursor: pointer;
 }
 
-#message>div>div {
+#message_active>div>div {
 	cursor: pointer;
 	position: absolute;
 	top: 15px;
@@ -90,13 +94,34 @@ header {
 	height: 40px;
 }
 
-#message p {
+#message_active p {
 	text-align: center;
 	line-height: 140%;
 }
 
-#message p>span {
+#message_active p>span {
 	font-style: normal;
+}
+
+#message_error {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	background: rgba(131, 74, 152, 0.8);
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	font-family: 'Chelsea Market', cursive;
+	font-style: italic;
+	cursor: pointer;
+}
+
+#message_error img {
+	height: 15vh;
 }
 
 #survey-form {
@@ -117,6 +142,11 @@ header {
 	font-size: 25px;
 	font-style: italic;
 	margin: 10px 0 0;
+}
+
+input._error,
+select._error {
+	box-shadow: 0 0 10px red;
 }
 
 @media(max-width: 700px) {
@@ -191,6 +221,10 @@ select {
 	padding: 5px 10px;
 	font-size: 15px;
 	border-width: 1px;
+	background: #fff;
+	-webkit-background: #fff;
+	-moz-background: #fff;
+	-ms-background: #fff;
 }
 
 /* Chrome 28+ */
@@ -350,7 +384,8 @@ footer p {
 
 input:focus,
 select:focus,
-textarea:focus {
+textarea:focus,
+button:focus {
 	outline: none;
 	/* 4 all browsers hide default focus */
 	border: 2px solid #16c05a;
