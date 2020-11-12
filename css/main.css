@@ -109,27 +109,33 @@ svg {
 	border-radius: 10px;
 }
 
-.projects-grid-item:nth-child(1) {
-	background: url("../img/mywork4.png") no-repeat left;
-	background-size: cover;
+.projects-grid-item:nth-last-child(5) {
+	background: url("../img/mywork6.png") no-repeat center;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
-.projects-grid-item:nth-child(2) {
+.projects-grid-item:nth-last-child(4) {
+	background: url("../img/mywork4.png") no-repeat center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
+.projects-grid-item:nth-last-child(3) {
 	background: url("../img/mywork3.png") no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
-.projects-grid-item:nth-child(3) {
+.projects-grid-item:nth-last-child(2) {
 	background: url("../img/mywork2.png") no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
-.projects-grid-item:nth-child(4) {
+.projects-grid-item:nth-last-child(1) {
 	background: url("../img/mywork1.png") no-repeat center;
-	background-size: cover;
+	background-size: contain;
 	background-attachment: fixed;
 }
 
@@ -244,6 +250,36 @@ svg {
 	#contact-links {
 		flex-wrap: wrap;
 	}
+
+	.projects-grid-item:nth-last-child(5) {
+		background: url("../img/mywork6-1280.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(4) {
+		background: url("../img/mywork4-1280.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(3) {
+		background: url("../img/mywork3-1280.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(2) {
+		background: url("../img/mywork2-1280.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(1) {
+		background: url("../img/mywork1-1280.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
 }
 
 @media (max-width: 954px) {
@@ -251,27 +287,33 @@ svg {
 		width: 100%;
 	}
 
-	.projects-grid-item:nth-child(1) {
+	.projects-grid-item:nth-last-child(5) {
+		background: url("../img/mywork6-800.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(4) {
 		background: url("../img/mywork4-800.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 
-	.projects-grid-item:nth-child(2) {
+	.projects-grid-item:nth-last-child(3) {
 		background: url("../img/mywork3-800.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 
-	.projects-grid-item:nth-child(3) {
+	.projects-grid-item:nth-last-child(2) {
 		background: url("../img/mywork2-800.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 
-	.projects-grid-item:nth-child(4) {
+	.projects-grid-item:nth-last-child(1) {
 		background: url("../img/mywork1-800.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 }
@@ -331,21 +373,33 @@ svg {
 		display: none;
 	}
 
-	.projects-grid-item:nth-child(1) {
+	.projects-grid-item:nth-last-child(5) {
+		background: url("../img/mywork6-600.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(4) {
 		background: url("../img/mywork4-600.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 
-	.projects-grid-item:nth-child(2) {
+	.projects-grid-item:nth-last-child(3) {
 		background: url("../img/mywork3-600.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 
-	.projects-grid-item:nth-child(4) {
+	.projects-grid-item:nth-last-child(2) {
+		background: url("../img/mywork2-600.png") no-repeat center;
+		background-size: contain;
+		background-attachment: fixed;
+	}
+
+	.projects-grid-item:nth-last-child(1) {
 		background: url("../img/mywork1-600.png") no-repeat center;
-		background-size: cover;
+		background-size: contain;
 		background-attachment: fixed;
 	}
 }
@@ -365,12 +419,6 @@ svg {
 
 	#contact p {
 		font-size: 0.7em;
-	}
-
-	.projects-grid-item:nth-child(1) {
-		background: url("../img/mywork4-600.png") no-repeat left;
-		background-size: cover;
-		background-attachment: fixed;
 	}
 }
 

@@ -17,10 +17,61 @@ $(document).ready(function () {
 	var counter2 = false;
 	var counter3 = false;
 	var counter4 = false;
+	var counter5 = false;
 
 	// Checking size of viewport and changes if need
 	$(window).on('load resize', function () {
-		if ($(window).width() <= '599' || $(window).width() <= '820' &&
+		if ($(window).width() >= '900' && $(window).width() > $(window).height()
+		|| $(window).width() >= '600' && $(window).width() < $(window).height()) {
+
+			var width = $('.photo').width();
+
+			// get span out of slider
+			$('#scr3>span').appendTo($('.photo'));
+
+			// all img has width of container
+			$('#scr3>img').width(width);
+
+			// block .slides width=container*quontity of images
+			$('#scr3').width(width * $('#scr3>img').length);
+
+			// Positioning
+			// move left block .slides, so images have space where to slide
+			$('#scr3').css('left', -width);
+
+			// last img become first(user can slide forever)
+			$('#scr3>img:last-child').prependTo('#scr3');
+
+
+			$('.photo').height(width * 1.28 + 'px');
+
+			if (!counter5) {
+				// move slides forward
+				function nextSlide2() {
+					$('#scr3').animate({
+						'margin-left': -width
+					}, 500, function () {
+						$('#scr3>img:first-child').appendTo('#scr3');
+						$('#scr3').css('margin-left', 0);
+					});
+				}
+				// move slides backward
+				function prevSlide2() {
+					$('#scr3').animate({
+						'margin-left': width
+					}, 500, function () {
+						$('#scr3>img:last-child').prependTo('#scr3');
+						$('#scr3').css('margin-left', 0);
+					});
+				}
+				counter5 = true;
+			}
+
+			// Controls
+			$('.next').click(nextSlide2);
+			$('.prev').click(prevSlide2);
+
+		} else if ($(window).width() <= '599' || $(window).width() < '900' &&
 			$(window).width() > $(window).height()) {
 
 			// ____1_screen____
@@ -53,7 +104,7 @@ $(document).ready(function () {
 			var width1 = $('.slider-cards').width();
 
 			// set height of slider
-			if ($(window).height() <= '567' || $(window).width() <= '820' &&
+			if ($(window).height() <= '567' || $(window).width() < '900' &&
 				$(window).width() > $(window).height()) {
 				$('#slider-wrapper').height($('#section3').height() - $('#section3>.text').outerHeight(true) + 'px');
 			} else {
@@ -152,7 +203,7 @@ $(document).ready(function () {
 			if ($(window).height() <= '567' && $(window).width() < $(window).height()) {
 				var heightPhoto = $('#section5').height() - $('#section5>#wrapper1').height() - $('#section5>.wrapper>article').height();
 				$('#section5>.wrapper>.photo').height('calc(' + heightPhoto + 'px - 2vh)');
-			} else if ($(window).width() <= '820' &&
+			} else if ($(window).width() < '900' &&
 				$(window).width() > $(window).height()) {
 				$('#section5>.wrapper>.photo').height($('#section5>.wrapper').height());
 			} else {

@@ -13,7 +13,10 @@ body {
 	padding: 15px;
 }
 
-p,h1,h3,li {
+p,
+h1,
+h3,
+li {
 	text-align: center;
 	font-family: 'Balsamiq Sans', cursive;
 	color: #333;
@@ -78,7 +81,7 @@ a:visited {
 	color: #ff8000;
 }
 
-@media (max-width: 430px){
+@media (max-width: 430px) {
 	#title {
 		font-size: 2em;
 	}

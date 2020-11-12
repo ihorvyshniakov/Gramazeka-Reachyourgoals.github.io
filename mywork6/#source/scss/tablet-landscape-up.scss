@@ -344,6 +344,7 @@ h2 {
 
 		.photo {
 			width: 300px;
+			height: 383.6px;
 			margin-left: 0;
 
 			#scr3 {
@@ -359,9 +360,7 @@ h2 {
 					bottom: -3.5%;
 				}
 
-				img:first-child {
-					display: block;
-					max-width: 100%;
+				img {
 					height: auto;
 				}
 			}

@@ -22,6 +22,10 @@ body {
 	display: flex;
 }
 
+body.lock {
+	overflow: hidden;
+}
+
 #navbar {
 	position: fixed;
 	top: 0;
@@ -79,7 +83,7 @@ body {
 	opacity: 0;
 	position: absolute;
 	top: 20px;
-	right: 50px;
+	right: calc(4% + 12px);
 }
 
 #main-doc {
@@ -171,6 +175,10 @@ code {
 		transition: all .5s ease-in-out;
 	}
 
+	.menu__btn>span {
+		left: 5px;
+	}
+
 	.menu__btn>span::before {
 		content: '';
 		transform: translateY(-10px);
@@ -194,6 +202,7 @@ code {
 		padding: 20px 20px 10px;
 		transition: opacity .3s linear;
 		opacity: 0;
+		height: calc(100vh - 50px);
 	}
 
 	#menu__box li {
@@ -224,8 +233,8 @@ code {
 		color: #fff;
 	}
 
-	/* animate burger menu */
-	#menu__toggle:checked~.menu__btn>span {
+	/* animation of burger menu */
+	/* #menu__toggle:checked~.menu__btn>span {
 		transform: translateX(-50px);
 		background: transparent;
 	}
@@ -242,8 +251,28 @@ code {
 		display: block;
 		opacity: 1;
 		right: 0;
+	} */
+
+	.menu__btn.active>span {
+		transform: translateX(-50px);
+		background: transparent;
 	}
 
+	.menu__btn.active>span::before {
+		transform: rotate(45deg) translate(35px, -35px);
+	}
+
+	.menu__btn.active>span::after {
+		transform: rotate(-45deg) translate(35px, 35px);
+	}
+
+	#menu__box.active {
+		display: block;
+		opacity: 1;
+		right: 0;
+	}
+
+	/*  */
 	#main-doc {
 		position: absolute;
 		width: 100%;
@@ -255,7 +284,6 @@ code {
 		padding: 0 0 0 30px;
 	}
 
-	/*  */
 	#introduction {
 		padding-top: 60px;
 		margin-top: -60px;
@@ -294,40 +322,38 @@ code {
 
 @media (max-width: 476px) {
 	#menu__box {
-		height: 82vh;
+		/* height: 82vh; */
 	}
 }
 
 @media (max-width: 380px) {
 	#menu__box {
 		width: 100%;
-		height: 82vh;
 		position: absolute;
 		top: 50px;
 	}
 
 	#navbar {
-		position: fixed;
+		/* position: fixed;
 		top: 0;
 		height: 50px;
 		width: 100%;
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
-		z-index: 1;
+		z-index: 1; */
 	}
 
 	#navbar header {
-		display: block;
+		/* display: block; */
+		width: calc(96% - 35px);
 	}
 
 	.menu__btn {
-		display: flex;
+		/* display: flex;
 		align-items: center;
-		position: static;
+		position: static; */
 		/* top: 5px;
 		right: 4%; */
 	}
-
-	#navbar a {}
 }

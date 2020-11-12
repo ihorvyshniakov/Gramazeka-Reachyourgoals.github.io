@@ -360,7 +360,12 @@ p {
 		}
 
 		.photo {
-			width: 100%;
+			width: 50%;
+			// height: 441.9px;
+
+			// @media (min-width: 700px) {
+			// 	height: 414px;
+			// }
 
 			#scr3 {
 				width: 50%;
@@ -379,12 +384,6 @@ p {
 					bottom: 25px;
 					transform: matrix(1, 0, 0, 1, 0, 0);
 					transform: rotateZ(25deg);
-				}
-
-				img:first-child {
-					display: block;
-					max-width: 100%;
-					height: auto;
 				}
 			}
 		}
@@ -557,6 +556,6 @@ footer {
 }
 
 // Height 0-499px landscape phones(0-480px)
-@media (max-height: 479px) and (orientation: landscape) {
+@media (max-height: 480px) and (orientation: landscape) {
 	@import "landscape-phone-only.scss";
 }
