@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		if (error === 0) {
 			// add message
-			document.getElementById('message').innerHTML = "<div><p>Dear, " + formName.value + " your message is successfully sent!<br>Our shop very soon call you =)</p></div>";
+			document.getElementById('message').innerHTML = "<div><div></div><p>Dear " + formName.value + ", your message is successfully sent!<br>Our shop very soon call you =)</p></div>";
 
 			// send email to post
 
@@ -38,11 +38,11 @@ document.addEventListener('DOMContentLoaded', function () {
 				// hiding loading
 				form.classList.remove('_sending');
 				// clear error state of require fields
-				formRemoveError(input);
+				// formRemoveError(input);
 
 				// MESSAGE
 				document.getElementById('message').id = 'message_active';
-				document.getElementById('message_active').addEventListener('click', function () {
+				document.querySelector('#message_active>div>div').addEventListener('click', function () {
 					document.getElementById('message_active').id = 'message';
 				})
 			} else {

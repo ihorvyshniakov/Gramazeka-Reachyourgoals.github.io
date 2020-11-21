@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="css/main.css">
 	<title>My Work #3</title>
 	</script>
@@ -18,19 +19,20 @@
 			<div id="header-img">
 				<a href="#"><img src="img/logo.png" alt="Logo of company"></a>
 			</div>
+			<div id="burger"><span></span></div>
 			<nav id="nav-bar">
 				<div class="href"><a href="#features" class="nav-link">Features</a></div>
 				<div class="href"><a href="#how-it-works" class="nav-link">How It Works</a></div>
 				<div class="href"><a href="#pricing" class="nav-link">Pricing</a></div>
 			</nav>
 		</header>
-		<section id="hero">
+		<div id="hero">
 			<h2>Handcrafted, home-made masterpieces</h2>
 			<form id="form" action="https://www.freecodecamp.com/email-submit">
 				<input id="email" type="email" placeholder="Enter your e-mail" required>
 				<input id="submit" class="btn" type="submit" value="GET STARTED">
 			</form>
-		</section>
+		</div>
 		<main>
 			<section id="features">
 				<div class="block">
@@ -56,8 +58,7 @@
 						<i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
 					</div>
 					<div class="desc">
-						<h2>
-							Quality Assurance</h2>
+						<h2>Quality Assurance</h2>
 						<p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
 					</div>
 				</div>
@@ -116,6 +117,8 @@
 			<span>Copyright 2016, Original Trombones</span>
 		</footer>
 	</div>
+
+	<script src="js/script.js"></script>
 </body>
 
 </html>
