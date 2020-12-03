@@ -1,0 +1,108 @@
+header,
+section,
+footer {
+	width: 100%;
+}
+
+.container {
+	width: 980px;
+	position: relative;
+}
+
+.header {
+	&:before {
+		height: 80vh;
+		top: 120px;
+		right: 42px;
+	}
+
+	& .nav__link {
+		margin-left: 40px;
+		margin-right: 30px;
+	}
+}
+
+#s1 {
+	& .trax .trax__title {
+		font-size: 60px;
+	}
+
+	& .video {
+		right: -470px;
+	}
+}
+
+#benefits {
+	height: 1270px;
+	margin-bottom: 20px;
+
+	& .container {
+		padding: 204px 0 0 580px;
+	}
+
+	& .video {
+		left: -270px;
+		top: 200px;
+	}
+
+	& .video a {
+		left: 65%;
+	}
+
+	& .video:before {
+		left: 65%;
+	}
+
+	& .article:last-of-type {
+		position: static;
+		bottom: 0;
+		right: 0;
+		margin-top: 20px;
+	}
+}
+
+#properties {
+	margin-bottom: 80px;
+
+	& .video {
+		right: -580px;
+	}
+
+	& .article {
+		left: 40px;
+	}
+}
+
+#forwhom {
+	height: 500px;
+
+	&:before {
+		height: 100%;
+	}
+
+	& .video {
+		height: 480px;
+	}
+
+	& .video img {
+		position: absolute;
+		top: 20px;
+		left: auto;
+		right: 200px;
+		height: 480px;
+	}
+
+	& .article {
+		top: 50px;
+		left: 30px;
+	}
+
+	& .article__header {
+		margin-bottom: 30px;
+	}
+
+	& .article__btn {
+		margin-top: 30px;
+		margin-left: 30px;
+	}
+}

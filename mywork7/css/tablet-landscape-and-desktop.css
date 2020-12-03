@@ -1,0 +1,10 @@
+header,
+section,
+footer {
+  width: 100%;
+  overflow: hidden; }
+
+.container {
+  max-width: initial;
+  width: 980px;
+  position: relative; }
