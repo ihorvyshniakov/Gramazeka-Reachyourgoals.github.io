@@ -103,7 +103,7 @@ h6 {
   -ms-transform: scale(0.6) rotate(-25deg) translateX(calc(1.25em * var(--distance-sine)));
   transform: scale(0.6) rotateZ(-25deg) translateX(calc(1.25em * var(--distance-sine))); }
 
-.anim1 .char {
+.anim1 .char, .animate .char {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
@@ -111,13 +111,13 @@ h6 {
   -o-transition-delay: calc(0.1s * var(--distance-percent));
   transition-delay: calc(0.1s * var(--distance-percent)); }
 
-.anim1:hover .char {
+.anim1:hover .char, .animate:hover .char {
   -webkit-transition-delay: calc(0.3s * (1 - var(--distance-percent)));
   -o-transition-delay: calc(0.3s * (1 - var(--distance-percent)));
   transition-delay: calc(0.3s * (1 - var(--distance-percent)));
-  -webkit-transform: scale(1.2) rotateZ(-25deg) translateX(calc(1.25em * var(--distance-sine)));
-  -ms-transform: scale(1.2) rotate(-25deg) translateX(calc(1.25em * var(--distance-sine)));
-  transform: scale(1.2) rotateZ(-25deg) translateX(calc(1.25em * var(--distance-sine))); }
+  -webkit-transform: scale(1.3) rotate(calc(1deg * var(--char-index))) translateX(calc(50px * var(--distance-sine))) translateY(calc(-5px * var(--char-index)));
+  -ms-transform: scale(1.3) rotate(calc(1deg * var(--char-index))) translateX(calc(50px * var(--distance-sine))) translateY(calc(-5px * var(--char-index)));
+  transform: scale(1.3) rotate(calc(1deg * var(--char-index))) translateX(calc(50px * var(--distance-sine))) translateY(calc(-5px * var(--char-index))); }
 
 html,
 body {
@@ -137,6 +137,68 @@ body {
   height: 100%;
   position: relative; }
 
+.scroll {
+  background: url("../img/scroll_bg.png") center no-repeat;
+  width: 20px;
+  height: 780px;
+  position: fixed;
+  top: 85px;
+  right: 72px;
+  background-size: contain;
+  z-index: 5; }
+  .scroll span {
+    display: block;
+    position: absolute;
+    height: 17px;
+    width: 17px; }
+    .scroll span:last-of-type {
+      background: url("../img/scroll_dot.png") center no-repeat;
+      height: 17px;
+      width: 17px;
+      top: 344px;
+      right: 1px; }
+      @media (max-width: 767px) {
+        .scroll span:last-of-type {
+          top: calc(30vh + 0px); } }
+    .scroll span:nth-child(1) {
+      background: #fff url("../img/scroll_circle.png") center no-repeat;
+      border-radius: 50%;
+      height: 17px;
+      width: 17px;
+      top: 344px;
+      right: 1px;
+      z-index: 6; }
+      @media (max-width: 767px) {
+        .scroll span:nth-child(1) {
+          top: calc(30vh + 0px); } }
+    .scroll span:nth-child(2) {
+      background: url("../img/scroll_dot.png") center no-repeat;
+      height: 17px;
+      width: 17px;
+      top: 372px;
+      right: 1px; }
+      @media (max-width: 767px) {
+        .scroll span:nth-child(2) {
+          top: calc(30vh + 28px); } }
+    .scroll span:nth-child(3) {
+      background: url("../img/scroll_dot.png") center no-repeat;
+      height: 17px;
+      width: 17px;
+      top: 394px;
+      right: 1px; }
+      @media (max-width: 767px) {
+        .scroll span:nth-child(3) {
+          top: calc(30vh + 28px + 22px); } }
+    .scroll span:nth-child(4) {
+      background: url("../img/scroll_dot.png") center no-repeat;
+      height: 17px;
+      width: 17px;
+      top: 416px;
+      right: 1px; }
+      @media (max-width: 767px) {
+        .scroll span:nth-child(4) {
+          top: calc(30vh + 28px + 22px + 22px); } }
+
 .header {
   background: #fff;
   height: 100px;
@@ -146,15 +208,6 @@ body {
   top: 0;
   left: 0;
   z-index: 10; }
-  .header:before {
-    content: '';
-    background: url("../img/navigation.png") 0 0 no-repeat;
-    width: 20px;
-    height: 80vh;
-    position: fixed;
-    top: 85px;
-    right: 72px;
-    background-size: contain; }
   .header__logo {
     float: left;
     margin-left: 17px; }
@@ -563,8 +616,6 @@ body {
       color: #fff; }
       #forwhom .article__text:first-of-type {
         margin-bottom: 20px; }
-      #forwhom .article__text span {
-        font-weight: bold; }
     #forwhom .article__btn {
       color: #3a30f8;
       font-size: 16px;
@@ -762,6 +813,10 @@ body {
   .container {
     width: 455px;
     position: relative; }
+  .scroll {
+    height: 80vh;
+    right: 4%;
+    background: none; }
   .header {
     padding-top: 0;
     height: auto;
@@ -1007,6 +1062,10 @@ body {
   .container {
     width: 300px;
     position: relative; }
+  .scroll {
+    height: 80vh;
+    right: 4%;
+    background: none; }
   .header {
     padding-top: 0;
     height: auto;

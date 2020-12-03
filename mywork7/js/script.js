@@ -5,6 +5,85 @@ $(document).ready(function () {
 		$('#burger, .nav').toggleClass('active');
 	});
 
+	// scroll
+	$(window).on('load resize', function () {	
+		if ($(window).width() < '475' && $(window).height() > '670') {
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 0},{
+				scrollTrigger: {
+					trigger: '#s1',
+					start: 'bottom+=100 70%',
+					end: 'bottom+=100 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28,
+				duration: .2,
+			})
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 28},{
+				scrollTrigger: {
+					trigger: '#properties',
+					start: 'top 70%',
+					end: 'top 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28+22,
+				duration: .2,
+			})
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 28+22},{
+				scrollTrigger: {
+					trigger: '#forwhom',
+					start: 'top 70%',
+					end: 'top 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28+22+22,
+				duration: .2,
+			})
+		} else {
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 0},{
+				scrollTrigger: {
+					trigger: '#s1',
+					start: 'bottom 70%',
+					end: 'bottom 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28,
+				duration: .2,
+			})
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 28},{
+				scrollTrigger: {
+					trigger: '#properties',
+					start: 'top 70%',
+					end: 'top 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28+22,
+				duration: .2,
+			})
+			gsap.fromTo('.scroll span:nth-child(1)', {
+				y: 28+22},{
+				scrollTrigger: {
+					trigger: '#forwhom',
+					start: 'top 70%',
+					end: 'top 70%',
+					toggleActions: "restart none none reverse",
+					// markers: 'true',
+				},
+				y: 28+22+22,
+				duration: .2,
+			})
+		}
+	})
+
 	// screen1
 	gsap.to('.trax__title', {
 		duration: 2,
