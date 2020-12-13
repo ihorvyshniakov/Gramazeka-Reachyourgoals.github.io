@@ -1,0 +1,141 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	/* min-width: 80vw; */
+	width: 1040px;
+	height: 1040px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.block {
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	border-radius: 50%;
+	background: url("circle.png") center no-repeat;
+	background-size: contain;
+}
+
+.block:hover {
+	-webkit-animation: 25s linear infinite rotate;
+	animation: 25s linear infinite rotate;
+}
+
+.block:hover .block__title,
+.block:hover .block__article {
+	-webkit-animation: 25s linear infinite antirotate;
+	animation: 25s linear infinite antirotate;
+}
+
+@-webkit-keyframes rotate {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(-360deg);
+		transform: rotateZ(-360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(-360deg);
+		transform: rotateZ(-360deg);
+	}
+}
+
+@-webkit-keyframes antirotate {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+@keyframes antirotate {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+.block {
+	width: 1040px;
+	left: calc(50% - 520px);
+	height: 1040px;
+}
+
+.block__title,
+.block .block__article {
+	position: absolute;
+	width: 234px;
+}
+
+.block__title {
+	top: 42%;
+	left: 39%;
+	color: #fff;
+	text-align: center;
+	z-index: 1;
+}
+
+*/ .block p {
+	font-size: 18px;
+}
+
+.block .empha,
+.block__title h1 {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.block .block__article:nth-last-of-type(5) {
+	top: 18%;
+	right: 21%;
+}
+
+.block .block__article:nth-last-of-type(4) {
+	top: 53%;
+	right: 8%;
+}
+
+.block .block__article:nth-last-of-type(3) {
+	top: 76%;
+	left: 40%;
+}
+
+.block .block__article:nth-last-of-type(2) {
+	top: 54%;
+	left: 9%;
+}
+
+.block .block__article:nth-last-of-type(1) {
+	top: 18%;
+	left: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */
