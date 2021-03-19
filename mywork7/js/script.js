@@ -1,86 +1,196 @@
 $(document).ready(function () {
 
+	// Check browser 4 accessing webp
+	function testWebP(callback) {
+		var webP = new Image();
+		webP.onload = webP.onerror = function () {
+			callback(webP.height == 2);
+		};
+		webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
+
+	}
+
+	testWebP(function (support) {
+		if (support == true) {
+			document.querySelector('body').classList.add('webp');
+		} else {
+			document.querySelector('body').classList.add('no-webp');
+		}
+	});
+
 	// burger-menu
 	$('#burger, .nav').click(function () {
 		$('#burger, .nav').toggleClass('active');
 	});
 
-	// scroll
-	$(window).on('load resize', function () {	
-		if ($(window).width() < '475' && $(window).height() > '670') {
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 0},{
+	// page scroll
+	$(window).on('load resize', function () {
+		if ($(window).width() < '475' && $(window).height() > '670' || $(window).width() < '768') {
+			let tlA = gsap.timeline({
 				scrollTrigger: {
-					trigger: '#s1',
-					start: 'bottom+=100 70%',
-					end: 'bottom+=100 70%',
-					toggleActions: "restart none none reverse",
+					trigger: '#benefits',
+					start: 'top+=200 70%',
+					end: '70% 70%',
+					toggleActions: "restart complete none reverse",
 					// markers: 'true',
-				},
-				y: 28,
-				duration: .2,
+				}
 			})
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 28},{
+			tlA.fromTo('.scroll span:nth-child(1)', {
+					y: 0
+				}, {
+					y: 28,
+					duration: .2,
+				})
+				.fromTo('.scroll span:last-of-type', {
+					opacity: 0},{
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.fromTo('.scroll span:nth-child(2)', {
+					opacity: 1
+				}, {
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
+
+			let tlB = gsap.timeline({
 				scrollTrigger: {
 					trigger: '#properties',
 					start: 'top 70%',
-					end: 'top 70%',
-					toggleActions: "restart none none reverse",
+					end: 'bottom-=100 70%',
+					toggleActions: "restart complete none reverse",
 					// markers: 'true',
-				},
-				y: 28+22,
-				duration: .2,
+				}
 			})
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 28+22},{
+			tlB.fromTo('.scroll span:nth-child(1)', {
+					y: 28
+				}, {
+					immediateRender: false,
+					y: 28 + 22,
+					duration: .2,
+				})
+				.fromTo('.scroll span:nth-child(2)', {
+					opacity: 0
+				}, {
+					immediateRender: false,
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.to('.scroll span:nth-child(3)', {
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
+
+			let tlC = gsap.timeline({
 				scrollTrigger: {
 					trigger: '#forwhom',
 					start: 'top 70%',
-					end: 'top 70%',
-					toggleActions: "restart none none reverse",
-					// markers: 'true',
-				},
-				y: 28+22+22,
-				duration: .2,
-			})
-		} else {
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 0},{
-				scrollTrigger: {
-					trigger: '#s1',
-					start: 'bottom 70%',
 					end: 'bottom 70%',
-					toggleActions: "restart none none reverse",
+					toggleActions: "restart complete none reverse",
 					// markers: 'true',
-				},
-				y: 28,
-				duration: .2,
+				}
 			})
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 28},{
+			tlC.fromTo('.scroll span:nth-child(1)', {
+					y: 28 + 22
+				}, {
+					immediateRender: false,
+					y: 28 + 22 + 22,
+					duration: .2,
+				})
+				.fromTo('.scroll span:nth-child(3)', {
+					opacity: 0
+				}, {
+					immediateRender: false,
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.fromTo('.scroll span:nth-child(4)', {
+					opacity: 1},{
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
+		} else {
+			let tlA = gsap.timeline({
+				scrollTrigger: {
+					trigger: '#benefits',
+					start: 'top 70%',
+					end: '70% 70%',
+					toggleActions: "restart complete none reverse",
+					// markers: 'true',
+				}
+			})
+			tlA.fromTo('.scroll span:nth-child(1)', {
+					y: 0
+				}, {
+					y: 28,
+					duration: .2,
+				})
+				.to('.scroll span:last-of-type', {
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.fromTo('.scroll span:nth-child(2)', {
+					opacity: 1
+				}, {
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
+
+			let tlB = gsap.timeline({
 				scrollTrigger: {
 					trigger: '#properties',
 					start: 'top 70%',
-					end: 'top 70%',
-					toggleActions: "restart none none reverse",
+					end: 'bottom-=100 70%',
+					toggleActions: "restart complete none reverse",
 					// markers: 'true',
-				},
-				y: 28+22,
-				duration: .2,
+				}
 			})
-			gsap.fromTo('.scroll span:nth-child(1)', {
-				y: 28+22},{
+			tlB.fromTo('.scroll span:nth-child(1)', {
+					y: 28
+				}, {
+					immediateRender: false,
+					y: 28 + 22,
+					duration: .2,
+				})
+				.fromTo('.scroll span:nth-child(2)', {
+					opacity: 0
+				}, {
+					immediateRender: false,
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.to('.scroll span:nth-child(3)', {
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
+
+			let tlC = gsap.timeline({
 				scrollTrigger: {
 					trigger: '#forwhom',
 					start: 'top 70%',
-					end: 'top 70%',
-					toggleActions: "restart none none reverse",
+					end: 'bottom 70%',
+					toggleActions: "restart complete none reverse",
 					// markers: 'true',
-				},
-				y: 28+22+22,
-				duration: .2,
+				}
 			})
+			tlC.fromTo('.scroll span:nth-child(1)', {
+					y: 28 + 22
+				}, {
+					immediateRender: false,
+					y: 28 + 22 + 22,
+					duration: .2,
+				})
+				.fromTo('.scroll span:nth-child(3)', {
+					opacity: 0
+				}, {
+					immediateRender: false,
+					opacity: 1,
+					duration: .2,
+				}, '-=.2')
+				.to('.scroll span:nth-child(4)', {
+					opacity: 0,
+					duration: .2,
+				}, '-=.2')
 		}
 	})
 
