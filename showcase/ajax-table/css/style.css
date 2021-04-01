@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+.table {
+  overflow-x: scroll;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto 40px;
+}
+
+table th,
+table td {
+  padding: 5px;
+}
+
+table th:nth-child(2),
+table th:nth-child(4),
+table th:nth-child(5),
+table td:nth-child(2),
+table td:nth-child(4),
+table td:nth-child(5) {
+  word-break: break-all;
+}
+
+table tr > td:last-child {
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.input #textarea {
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 18px;
+  resize: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.input .btn {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input .btn .button {
+  padding: 0 20px;
+  margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 50px;
+  background-color: orange;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 5px 0 #161b13;
+          box-shadow: 0 5px 0 #161b13;
+  -webkit-transition: background-color 0.5s ease 0s;
+  -o-transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 0s;
+  position: relative;
+  top: 0;
+}
+
+.input .btn .button:hover {
+  background-color: orangered;
+}
+
+.input .btn .button:active {
+  top: 3px;
+  -webkit-box-shadow: 0 2px 0 #161b13;
+          box-shadow: 0 2px 0 #161b13;
+}
+
+.input .btn .button:focus {
+  outline: none;
+}
+
+#counter {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto;
+}
+
+#counter p {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  float: right;
+  padding: 10px;
+  width: auto;
+  min-width: 50px;
+  border: 2px dashed grey;
+  border-radius: 5px;
+  text-align: center;
+}
+
+@media (max-width: 699px) {
+  table {
+    width: 100%;
+  }
+
+  table th:nth-child(2),
+  table th:nth-child(4),
+  table th:nth-child(5),
+  table td:nth-child(2),
+  table td:nth-child(4),
+  table td:nth-child(5) {
+    word-break: inherit;
+  }
+}
