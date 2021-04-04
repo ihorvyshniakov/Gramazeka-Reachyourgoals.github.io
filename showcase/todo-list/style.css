@@ -1,0 +1,158 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Josefin+Sans&display=swap');
+/* 
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Comfortaa', cursive;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 16px;
+	font-family: 'Josefin Sans', sans-serif;
+	letter-spacing: .2em;
+}
+
+form {
+	margin-top: 30px;
+	width: 70vw;
+	font-size: 0;
+	letter-spacing: 0;
+	display: flex;
+	justify-content: center;
+}
+
+form>input {
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bold;
+	line-height: 18px;
+	font-size: 16px;
+	padding: 8px 10px 5px;
+	margin: 0 5px;
+	text-align: center;
+}
+
+form>[type="submit"],
+form>[type="button"] {
+	cursor: pointer;
+}
+
+input {
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+
+input:focus {
+	outline: none;
+	border: 2px solid orange;
+}
+
+form>[type=text] {
+	width: 330px;
+}
+
+[type=submit]:active,
+[type=button]:active {
+	background: orange;
+	color: white;
+}
+
+h1 {
+	margin: 20px 0;
+}
+
+img {
+	width: 100px;
+}
+
+.list {
+	margin-top: 30px;
+	width: 60%;
+	padding: 5px;
+	background: rgb(162, 1, 122);
+	border-radius: 5px;
+}
+
+.list__item {
+	background: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	padding-right: 35px;
+	margin-bottom: 5px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+
+.list__item>span {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	right: 5px;
+	top: 5px;
+	cursor: pointer;
+}
+
+.list__item>span:hover:before,
+.list__item>span:hover:after {
+	background: rgb(255, 56, 56);
+}
+
+.list__item>span:before,
+.list__item>span:after {
+	content: '';
+	position: absolute;
+	width: 25px;
+	height: 4px;
+	right: 2px;
+	top: 13px;
+	background: black;
+	border-radius: 2px;
+	transform: translate(-50%, -50%);
+}
+
+.list__item>span:before {
+	transform: rotate(-45deg);
+}
+
+.list__item>span:after {
+	transform: rotate(45deg);
+}
+
+.list__item input {
+	width: 20px;
+	height: 20px;
+	margin: 0 20px 0 10px;
+	cursor: pointer;
+}
+
+.list__item input.checked+label {
+	text-decoration: line-through;
+}
+
+.list__item label {
+	display: inline-block;
+	width: calc(100% - 30px);
+	text-align: left;
+	font-family: 'Comfortaa', cursive;
+	font-size: 1.2em;
+	line-height: 1.3em;
+}
+
+p {
+	margin: 0;
+	font-size: 30px;
+	font-weight: bold;
+	color: #fff;
+	letter-spacing: .2em;
+	text-align: center;
+}
