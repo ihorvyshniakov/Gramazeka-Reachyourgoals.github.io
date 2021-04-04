@@ -11,22 +11,25 @@
 </head>
 
 <body>
+	<div class="container">
+		<h1>Create your TO DO list!</h1>
+		<img src="icon.png" alt="icon of todo list">
+		<form onsubmit="return false">
+			<input type="text" placeholder="Input your task" required>
+			<div>
+				<input type="submit" value="ADD">
+				<input type="button" value="CLEAR">
+			</div>
+		</form>
 
-	<h1>Create your TO DO list!</h1>
-	<img src="icon.png" alt="icon of todo list">
-	<form onsubmit="return false">
-		<input type="text" placeholder="Input your task" required>
-		<input type="submit" value="Add">
-		<input type="button" value="Clear">
-	</form>
-
-	<div id="list" class="list">
-		<!-- <div class="list__item">
-			<input type="checkbox" id="e1">
-			<label for="e1">Add some new tasks to this list</label>
-			<span></span>
-		</div> -->
-		<p>...</p>
+		<div id="list" class="list">
+			<!-- <div class="list__item">
+				<input type="checkbox" id="e1">
+				<label for="e1">Add some new tasks to this list</label>
+				<span></span>
+			</div> -->
+			<p>...</p>
+		</div>
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

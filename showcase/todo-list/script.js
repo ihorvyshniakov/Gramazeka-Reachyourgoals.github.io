@@ -1,3 +1,7 @@
+// TODO: Adaptive
+// TODO: add localStorage
+// TODO: change object status
+
 class NewTask {
 	constructor(id, text) {
 		this.id = id;
@@ -25,6 +29,8 @@ class NewTask {
 	}
 }
 
+// Array with all objects(tasks)
+var taskArray = [];
 // clickCounter for btn 'Add'
 var clickCounter = 1;
 
@@ -38,6 +44,7 @@ $('[type=submit]').on('click', () => {
 		// addItem(clickCounter, inputText);
 		this['task' + clickCounter] = new NewTask(clickCounter, inputText);
 		this['task' + clickCounter].addToList()
+		taskArray.push(this['task' + clickCounter])
 	}
 
 	$('[type=text]').val('');
