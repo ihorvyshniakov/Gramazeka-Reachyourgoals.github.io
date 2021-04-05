@@ -109,9 +109,24 @@ svg {
 	border-radius: 10px;
 }
 
-#p8 {
+.showcase {
 	display: flex;
 	height: 50vh;
+}
+
+#p10 .card {
+	width: 100%;
+}
+
+#todo-list {
+	background: url("../img/todo-list.png") no-repeat center;
+	background-size: contain;
+}
+
+#p9 {
+	background: url("../img/mywork8.png") no-repeat center;
+	background-size: contain;
+	background-attachment: fixed;
 }
 
 .card {
@@ -129,12 +144,6 @@ svg {
 #ajax-table {
 	background: url("../img/ajax-table.png") no-repeat center;
 	background-size: contain;
-}
-
-#p9 {
-	background: url("../img/mywork8.png") no-repeat center;
-	background-size: contain;
-	background-attachment: fixed;
 }
 
 #p7 {
