@@ -48,26 +48,43 @@ form input {
 form [type="submit"],
 form [type="button"] {
 	cursor: pointer;
+	padding: 13px 15px 10px;
+}
+
+form [type="submit"] {
+	background: rgb(0, 214, 82);
+	border: none;
+	color: #fff;
+}
+
+form [type="button"] {
+	background: rgb(240, 41, 15);
+	border: none;
+	color: #fff;
 }
 
 input {
 	padding: 5px 10px;
-	border-radius: 10px;
+	border-radius: 25px;
 }
 
-input:focus {
-	outline: none;
-	border: 2px solid orange;
-}
-
-form>[type=text] {
+form [type=text] {
 	width: 330px;
+	border: 3px solid #000;
 }
 
 [type=submit]:active,
 [type=button]:active {
 	background: orange;
-	color: white;
+	color: #fff;
+}
+
+input:focus {
+	outline: none;
+}
+
+form [type=text]:focus {
+	border: 3px solid orange;
 }
 
 h1 {
