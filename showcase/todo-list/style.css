@@ -45,8 +45,8 @@ form input {
 	text-align: center;
 }
 
-form>[type="submit"],
-form>[type="button"] {
+form [type="submit"],
+form [type="button"] {
 	cursor: pointer;
 }
 
@@ -71,9 +71,16 @@ form>[type=text] {
 }
 
 h1 {
-	margin: 20px 0;
+	margin: 15px 0;
 	text-align: center;
 	line-height: 1.3em;
+}
+
+p {
+	margin-bottom: 15px;
+	font-size: 25px;
+	line-height: 1.3em;
+	text-align: center;
 }
 
 img {
@@ -143,7 +150,7 @@ img {
 	cursor: pointer;
 }
 
-.list__item input.checked+label {
+.list__item input:checked+label {
 	text-decoration: line-through;
 }
 
@@ -156,7 +163,7 @@ img {
 	line-height: 1.3em;
 }
 
-p {
+.list p {
 	margin: 0;
 	font-size: 30px;
 	font-weight: bold;
@@ -226,5 +233,16 @@ p {
 
 	.list {
 		margin-top: 20px;
+	}
+}
+
+/* fonts */
+@media(max-width: 400px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	p {
+		font-size: 20px;
 	}
 }
