@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test-Evergreen</title>
+	<!-- Bootstrap4 -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+		integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap"
+		rel="stylesheet">
+	<!-- icons fontAwesome -->
+	<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+	<!-- owl-carousel -->
+	<link rel="stylesheet" href="owl-carousel/owl.carousel.min.css" />
+
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<!-- carousel -->
+	<div class="owl-carousel owl-theme">
+		<div class="item">
+			<img src="img/bg1.png" alt="background">
+		</div>
+		<div class="item">
+			<img src="img/bg1.png" alt="background">
+		</div>
+	</div>
+	<!-- carousel -->
+	<div class="container">
+		<!-- header -->
+		@@include('_header.html')
+		<!-- header -->
+		<main>
+			<section>
+				<!-- article-info -->
+				<article>
+					<h2>ОРГАНИЧЕСКОЕ<br><span>НАНО-УДОБНИЕ</span><br><span>ДОБРИВО</span></h2>
+					<div class="background">
+						<ul>
+							<li>
+								<h3>
+									ПРИРОСТ УРОЖАЯ
+								</h3>
+								<p>в сравнении с химическим удобрением</p>
+								<p>30%-250%</p>
+							</li>
+							<li>
+								<h3>
+									ЭКОНОМИЯ
+								</h3>
+								<p>химических удобрений в хозяйстве</p>
+								<p>до 70%</p>
+							</li>
+							<li>
+								<h3>
+									РОСТ КОРНЕВОЙ
+								</h3>
+								<p>системы растений при использовании</p>
+								<p>в 3-10раз</p>
+							</li>
+						</ul>
+						<div class="more-info">
+							<div class="text1">
+								<p>Хотитите<br>трали-вали<br>ла-лала?</p>
+							</div>
+							<div class="text2">
+								<p>УЗНАЙТЕ<br>О НАГРО БОЛЬШЕ!</p>
+								<a href="#">УЗНАТЬ БОЛЬШЕ</a>
+							</div>
+						</div>
+					</div>
+				</article>
+				<!-- article-info -->
+				<!-- calculator -->
+				<div class="calc">
+					<div class="border-dashed">
+						<h2>ПОСЧИТАЙТЕ ПРИБЫЛЬ</h2>
+						<p><span>ДОБРИВО</span> ЭФФЕКТИВНЕЕ ХИМИИ</p>
+						<form id="calculator">
+							<div class="item">
+								<label for="culture">Выберите культуру</label>
+								<select id="culture">
+									<option value="3100" selected>Пшеница ≈ 3100 грн / т</option>
+									<option value="1600">Пшеница ≈ 1600 грн / т</option>
+								</select>
+							</div>
+							<div class="item">
+								<label for="val1">Урожайность, ц/га</label>
+								<input type="number" id="val1" placeholder="20">
+								<p class="error-message">Введите другое значение( > 0 )</p>
+							</div>
+							<div class="item">
+								<label for="val2">Стоимость хим. удобрения, грн/га</label>
+								<input type="number" id="val2" placeholder="3000">
+								<p class="error-message">Введите другое значение( > 0 )</p>
+							</div>
+							<div class="item">
+								<label for="val3">Посевная площадь, га</label>
+								<input type="number" id="val3" placeholder="10">
+								<p class="error-message">Введите другое значение( > 0 )</p>
+							</div>
+							<div class="result">
+								<p>ПРИБЫЛЬ ОТ ДОБРИВА<br><span id="resultInfo">50 000</span><br><span>грн</span></p>
+							</div>
+						</form>
+					</div>
+				</div>
+				<!-- calculator -->
+			</section>
+		</main>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<!-- Bootstrap4 -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+		crossorigin="anonymous"></script>
+	<!-- Owl Carousel -->
+	<script src="owl-carousel/owl.carousel.min.js"></script>
+
+	<script src="js/script.min.js"></script>
+</body>
+
+</html>
