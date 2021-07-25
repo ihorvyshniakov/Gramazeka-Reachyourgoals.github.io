@@ -1,0 +1,24 @@
+.total {
+  padding: 20px;
+  width: 100%;
+  background: #fff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 20px;
+  min-height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.total * {
+  font-size: 30px;
+  color: #000;
+}
+/*# sourceMappingURL=Order.css.map */
