@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Edu QLD Beginner', cursive;
+  font-size: 50px;
+}
+
+body {
+  min-height: 100vh;
+  background: beige;
+  overflow: hidden;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  pointer-events: none;
+  text-align: center;
+  text-transform: capitalize;
+  background: #833ab4;
+  background: -webkit-gradient(linear, right top, left top, from(#833ab4), color-stop(50%, #fd1d1d), to(#fcb045));
+  background: linear-gradient(270deg, #833ab4 0%, #fd1d1d 50%, #fcb045 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#glassBox {
+  position: absolute;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 300px;
+  -webkit-transform: translate(-243px, -181px);
+          transform: translate(-243px, -181px);
+}
+
+#glassBox img {
+  opacity: 0;
+}
+
+#glassBox.cracked img {
+  max-height: 100%;
+  height: auto;
+  opacity: 1;
+  -webkit-animation: appear 1s linear;
+          animation: appear 1s linear;
+}
+
+@-webkit-keyframes appear {
+  0% {
+  }
+}
+
+@keyframes appear {
+  0% {
+  }
+}
+/*# sourceMappingURL=style.css.map */
