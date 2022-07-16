@@ -36,35 +36,24 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-#glassBox {
+.glassBox {
   position: absolute;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   height: 300px;
+  max-width: 100%;
   -webkit-transform: translate(-243px, -181px);
           transform: translate(-243px, -181px);
 }
 
-#glassBox img {
+.glassBox img {
   opacity: 0;
 }
 
-#glassBox.cracked img {
+.glassBox.cracked img {
   max-height: 100%;
   height: auto;
   opacity: 1;
-  -webkit-animation: appear 1s linear;
-          animation: appear 1s linear;
-}
-
-@-webkit-keyframes appear {
-  0% {
-  }
-}
-
-@keyframes appear {
-  0% {
-  }
 }
 /*# sourceMappingURL=style.css.map */

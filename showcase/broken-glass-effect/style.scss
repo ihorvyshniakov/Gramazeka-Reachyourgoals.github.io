@@ -35,10 +35,11 @@ h1 {
 	-webkit-text-fill-color: transparent;
 }
 
-#glassBox {
+.glassBox {
 	position: absolute;
 	width: max-content;
 	height: 300px;
+	max-width: 100%;
 	transform: translate(-243px, -181px);
 
 	img {
@@ -50,12 +51,6 @@ h1 {
 			max-height: 100%;
 			height: auto;
 			opacity: 1;
-			animation: appear 1s linear;
 		}
-	}
-}
-
-@keyframes appear {
-	0% {
 	}
 }
