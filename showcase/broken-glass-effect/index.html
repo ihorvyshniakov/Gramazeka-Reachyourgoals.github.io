@@ -5,13 +5,18 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Broken glass</title>
-		<link rel="stylesheet" href="style.css" />
+		<link id="css" rel="stylesheet"/>
 	</head>
 	<body>
 		<h1>Broken glass effect</h1>
 		<audio id="crackingAudio">
 			<source src="./files/glass-cracking.mp3" type="audio/mpeg" />
 		</audio>
-		<script src="index.js"></script>
+		<script id="js"></script>
+		<!-- add Unic versions to CSS & JS files -->
+		<script>
+			css.href = `style.css?v=${Date.now()}`;
+			js.src = `index.js?v=${Date.now()}`;
+		</script>
 	</body>
 </html>
