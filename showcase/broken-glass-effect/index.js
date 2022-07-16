@@ -1,3 +1,5 @@
+document.body.classList.add('loading');
+
 const printMousePos = (e, isItMobile = false) => {
 	let img = document.createElement('img');
 	img.src='./files/cracked-glass.png';
@@ -22,8 +24,11 @@ const printMousePos = (e, isItMobile = false) => {
 	crackingAudio.play();
 };
 
-if (window.innerWidth > 768) {
-	document.addEventListener('mousedown', printMousePos);
-} else {
-	document.addEventListener('touchstart', e => printMousePos(e, true));
-}
+window.addEventListener('load', () => {
+	document.body.classList.remove('loading');
+	if (window.innerWidth > 768) {
+		document.addEventListener('mousedown', printMousePos);
+	} else {
+		document.addEventListener('touchstart', e => printMousePos(e, true));
+	}
+});

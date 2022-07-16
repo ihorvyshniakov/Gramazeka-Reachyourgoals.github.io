@@ -25,6 +25,32 @@ body {
           align-items: center;
 }
 
+body #loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 1s linear;
+  transition: opacity 1s linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body.loading #loading {
+  opacity: 1;
+}
+
 h1 {
   pointer-events: none;
   text-align: center;

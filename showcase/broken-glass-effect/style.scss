@@ -18,6 +18,28 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
+	#loading{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background: white;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity 1s linear;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&.loading{
+		#loading{
+			opacity: 1;
+		}
+	}
 }
 
 h1 {
