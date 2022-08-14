@@ -118,13 +118,19 @@ svg {
 	width: 100%;
 }
 
+#p11 {
+	background: url('../img/mywork11.jpeg') no-repeat center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
 #todo-list {
-	background: url("../img/todo-list.png") no-repeat center;
+	background: url('../img/todo-list.png') no-repeat center;
 	background-size: contain;
 }
 
 #p9 {
-	background: url("../img/mywork8.png") no-repeat center;
+	background: url('../img/mywork8.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
@@ -137,53 +143,53 @@ svg {
 }
 
 #snake {
-	background: url("../img/snake.png") no-repeat center;
+	background: url('../img/snake.png') no-repeat center;
 	background-size: contain;
 }
 
 #ajax-table {
-	background: url("../img/ajax-table.png") no-repeat center;
+	background: url('../img/ajax-table.png') no-repeat center;
 	background-size: contain;
 }
 
 #p7 {
-	background: url("../img/mywork7.png") no-repeat center;
+	background: url('../img/mywork7.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p6 {
-	background: url("../img/mywork6.png") no-repeat center;
+	background: url('../img/mywork6.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p5 {
-	background: url("../img/bootstrap.png") no-repeat center;
+	background: url('../img/bootstrap.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p4 {
-	background: url("../img/mywork4.png") no-repeat center;
+	background: url('../img/mywork4.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p3 {
-	background: url("../img/mywork3.png") no-repeat center;
+	background: url('../img/mywork3.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p2 {
-	background: url("../img/mywork2.png") no-repeat center;
+	background: url('../img/mywork2.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
 
 #p1 {
-	background: url("../img/mywork1.png") no-repeat center;
+	background: url('../img/mywork1.png') no-repeat center;
 	background-size: contain;
 	background-attachment: fixed;
 }
@@ -203,12 +209,12 @@ svg {
 
 .project-tile:hover .project-title {
 	opacity: 1;
-	transition: all .4s linear;
+	transition: all 0.4s linear;
 }
 
 .project-tile:hover .code {
 	opacity: 1;
-	transition: all .8s linear;
+	transition: all 0.8s linear;
 }
 
 .project-title {
@@ -216,7 +222,7 @@ svg {
 	background: #202020;
 	color: #fff;
 	border-radius: 5px;
-	transition: all .4s linear;
+	transition: all 0.4s linear;
 }
 
 .code {
@@ -275,14 +281,14 @@ svg {
 .btn {
 	color: #fff;
 	padding: 10px 20px;
-	transition: all .05s linear;
+	transition: all 0.05s linear;
 }
 
 .btn:hover,
 #profile-link:hover {
 	color: #000;
 	transform: translateY(8px);
-	transition: all .05s linear;
+	transition: all 0.05s linear;
 }
 
 @media (min-height: 730px) {
@@ -301,46 +307,46 @@ svg {
 	}
 
 	#p9 {
-		background: url("../img/mywork8-1280.png") no-repeat center;
+		background: url('../img/mywork8-1280.png') no-repeat center;
 		background-size: contain;
 	}
 
 	#p7 {
-		background: url("../img/mywork7-1280.png") no-repeat center;
+		background: url('../img/mywork7-1280.png') no-repeat center;
 		background-size: contain;
 	}
 
 	#p6 {
-		background: url("../img/mywork6-1280.png") no-repeat center;
+		background: url('../img/mywork6-1280.png') no-repeat center;
 		background-size: contain;
 	}
 
 	#p5 {
-		background: url("../img/bootstrap-1280.png") no-repeat center;
+		background: url('../img/bootstrap-1280.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p4 {
-		background: url("../img/mywork4-1280.png") no-repeat center;
+		background: url('../img/mywork4-1280.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p3 {
-		background: url("../img/mywork3-1280.png") no-repeat center;
+		background: url('../img/mywork3-1280.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p2 {
-		background: url("../img/mywork2-1280.png") no-repeat center;
+		background: url('../img/mywork2-1280.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p1 {
-		background: url("../img/mywork1-1280.png") no-repeat center;
+		background: url('../img/mywork1-1280.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
@@ -356,49 +362,49 @@ svg {
 	}
 
 	#p9 {
-		background: url("../img/mywork8-800.png") no-repeat center;
+		background: url('../img/mywork8-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p7 {
-		background: url("../img/mywork7-800.png") no-repeat center;
+		background: url('../img/mywork7-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p6 {
-		background: url("../img/mywork6-800.png") no-repeat center;
+		background: url('../img/mywork6-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p5 {
-		background: url("../img/bootstrap-800.png") no-repeat center;
+		background: url('../img/bootstrap-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p4 {
-		background: url("../img/mywork4-800.png") no-repeat center;
+		background: url('../img/mywork4-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p3 {
-		background: url("../img/mywork3-800.png") no-repeat center;
+		background: url('../img/mywork3-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p2 {
-		background: url("../img/mywork2-800.png") no-repeat center;
+		background: url('../img/mywork2-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p1 {
-		background: url("../img/mywork1-800.png") no-repeat center;
+		background: url('../img/mywork1-800.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
@@ -474,51 +480,50 @@ svg {
 		display: none;
 	}
 
-
 	#p9 {
-		background: url("../img/mywork8-600.png") no-repeat center;
+		background: url('../img/mywork8-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p7 {
-		background: url("../img/mywork7-600.png") no-repeat center;
+		background: url('../img/mywork7-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p6 {
-		background: url("../img/mywork6-600.png") no-repeat center;
+		background: url('../img/mywork6-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p5 {
-		background: url("../img/bootstrap-600.png") no-repeat center;
+		background: url('../img/bootstrap-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p4 {
-		background: url("../img/mywork4-600.png") no-repeat center;
+		background: url('../img/mywork4-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p3 {
-		background: url("../img/mywork3-600.png") no-repeat center;
+		background: url('../img/mywork3-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p2 {
-		background: url("../img/mywork2-600.png") no-repeat center;
+		background: url('../img/mywork2-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
 
 	#p1 {
-		background: url("../img/mywork1-600.png") no-repeat center;
+		background: url('../img/mywork1-600.png') no-repeat center;
 		background-size: contain;
 		background-attachment: fixed;
 	}
@@ -557,7 +562,7 @@ svg {
 	}
 }
 
-/* 
+/*
 #82d14a
 #4ab6d1
 #d6534c
