@@ -1,3 +1,5 @@
+// TODO: - made controls for mobile
+
 var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 
@@ -72,7 +74,7 @@ Block.prototype.drawSquare = function (color) {
 	var y = this.row * blockSize;
 	ctx.fillStyle = color;
 	ctx.fillRect(x, y, blockSize, blockSize);
-}
+};
 
 // add method draw circle
 Block.prototype.drawCircle = function (color) {
@@ -80,20 +82,16 @@ Block.prototype.drawCircle = function (color) {
 	var centerY = this.row * blockSize + blockSize / 2;
 	ctx.fillStyle = color;
 	circle(centerX, centerY, blockSize / 2, true);
-}
+};
 
 // check is block in the same position as another
 Block.prototype.equal = function (otherBlock) {
 	return this.col === otherBlock.col && this.row === otherBlock.row;
-}
+};
 
 // Counstructor of snake
 function Snake() {
-	this.segments = [
-		new Block(7, 5),
-		new Block(6, 5),
-		new Block(5, 5),
-	];
+	this.segments = [new Block(7, 5), new Block(6, 5), new Block(5, 5)];
 
 	this.direction = 'right';
 	this.nextDirection = 'right';
@@ -111,7 +109,7 @@ Snake.prototype.draw = function () {
 			this.segments[i].drawSquare('Silver');
 		}
 	}
-}
+};
 
 Snake.prototype.move = function () {
 	var head = this.segments[0];
@@ -152,16 +150,17 @@ Snake.prototype.move = function () {
 		// false -> apple doesn't eaten, tail of snake pop()
 		this.segments.pop();
 	}
-}
+};
 
 Snake.prototype.checkCollision = function (head) {
 	// check wallCollistions
-	var leftCollision = (head.col === 0);
-	var topCollision = (head.row === 0);
-	var rightCollision = (head.col === widthInBlocks - 1);
-	var bottomCollision = (head.row === heightInBlocks - 1);
+	var leftCollision = head.col === 0;
+	var topCollision = head.row === 0;
+	var rightCollision = head.col === widthInBlocks - 1;
+	var bottomCollision = head.row === heightInBlocks - 1;
 
-	var wallCollision = leftCollision || topCollision || rightCollision || bottomCollision;
+	var wallCollision =
+		leftCollision || topCollision || rightCollision || bottomCollision;
 
 	// check selfCollistions
 	var selfCollision = false;
@@ -174,7 +173,7 @@ Snake.prototype.checkCollision = function (head) {
 	}
 
 	return wallCollision || selfCollision;
-}
+};
 
 Snake.prototype.setDirection = function (newDirection) {
 	if (this.direction === 'up' && newDirection === 'down') {
@@ -188,7 +187,7 @@ Snake.prototype.setDirection = function (newDirection) {
 	}
 
 	this.nextDirection = newDirection;
-}
+};
 
 // Constuctor of apple
 function Apple() {
@@ -197,18 +196,21 @@ function Apple() {
 
 Apple.prototype.draw = function () {
 	this.position.drawCircle('DarkGreen');
-}
+};
 
 Apple.prototype.move = function (segments) {
 	// for loop & while loop fix problem with generate apple on snake body
 	for (let i = 0; i < segments.length; i++) {
-		while (segments[i].col == this.position.col && segments[i].row == this.position.row) {
+		while (
+			segments[i].col == this.position.col &&
+			segments[i].row == this.position.row
+		) {
 			var randomCol = Math.floor(Math.random() * (widthInBlocks - 2) + 1);
 			var randomRow = Math.floor(Math.random() * (heightInBlocks - 2) + 1);
 			this.position = new Block(randomCol, randomRow);
 		}
 	}
-}
+};
 
 var directions = {
 	37: 'left',
@@ -223,7 +225,7 @@ $('body').keydown(function (e) {
 	if (newDirection !== undefined) {
 		snake.setDirection(newDirection);
 	}
-})
+});
 
 // create objects of snake and apple
 var snake = new Snake();
@@ -277,8 +279,6 @@ $('#start-again').on('click', () => {
 			gameLoop();
 		}
 	}
-})
+});
 
-$('#again').on('click', () => {
-
-})
+$('#again').on('click', () => {});
