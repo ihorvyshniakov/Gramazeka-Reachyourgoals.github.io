@@ -118,6 +118,12 @@ svg {
 	width: 100%;
 }
 
+#p12 {
+	background: #c1d437 no-repeat center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
 #p11 {
 	background: url('../img/mywork11.jpeg') no-repeat center;
 	background-size: contain;
