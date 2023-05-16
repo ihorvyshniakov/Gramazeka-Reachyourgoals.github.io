@@ -118,6 +118,12 @@ svg {
 	width: 100%;
 }
 
+#p14 {
+	background: #984eff no-repeat center;
+	background-size: contain;
+	background-attachment: fixed;
+}
+
 #p13 {
 	background: #fb8c8c no-repeat center;
 	background-size: contain;
